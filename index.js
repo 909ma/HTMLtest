@@ -50,16 +50,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-document.addEventListener("keydown", function (event) {
-  if (event.keyCode === 37) {
-    // 왼쪽 화살표
-    backQuestion();
-  } else if (event.keyCode === 39) {
-    // 오른쪽 화살표
-    nextQuestion();
-  }
-});
-
 //해답 보이기, 가리기 기능
 let count = 0;
 answerBtn.onclick = function () {
@@ -82,3 +72,23 @@ answerBtn.onclick = function () {
   }
   count++;
 };
+
+//빠른 시전 기능
+document.addEventListener("keydown", function (event) {
+  if (event.keyCode === 37) {
+    // 왼쪽 화살표
+    backQuestion();
+  } else if (event.keyCode === 39) {
+    // 오른쪽 화살표
+    nextQuestion();
+  } else if (event.keyCode === 38) {
+    // 위쪽 화살표
+    for (const iterator of answers) {
+      if (iterator.style.display === "none") {
+        iterator.style.display = "block";
+      } else {
+        iterator.style.display = "none";
+      }
+    }
+  }
+});
