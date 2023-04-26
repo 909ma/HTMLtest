@@ -19,14 +19,14 @@ input {
 }
 .gotoB {
   position: fixed;
-  bottom: 200px;
+  bottom: 20%;
   left: 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 200px;
+  height: 20%;
   background-color: #4CAF50;
   color: white;
   font-size: 18px;
@@ -56,10 +56,10 @@ input {
 
 .show{
   position: fixed; /* 버튼을 화면에서 고정시킵니다. */
-  bottom: 200px; /* 버튼의 위치를 화면 하단에 맞춥니다. */
+  bottom: 20%; /* 버튼의 위치를 화면 하단에 맞춥니다. */
   right: 0; /* 버튼의 위치를 화면 오른쪽에 맞춥니다. */
   width: 50%; /* 버튼의 너비를 50%로 설정합니다. */
-  height: 200px; /* 버튼의 높이를 50px로 설정합니다. */
+  height: 20%; /* 버튼의 높이를 50px로 설정합니다. */
   background-color: #4CAF50; /* 버튼의 배경색을 설정합니다. */
   color: white; /* 버튼의 글자색을 설정합니다. */
   font-size: 18px; /* 버튼의 글자 크기를 설정합니다. */
@@ -76,7 +76,7 @@ input {
   bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
   left: 0; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
   width: 50%; /* 버튼의 너비를 50%로 설정합니다. */
-  height: 200px; /* 버튼의 높이를 50px로 설정합니다. */
+  height: 20%; /* 버튼의 높이를 50px로 설정합니다. */
   background-color: #4CAF50; /* 버튼의 배경색을 설정합니다. */
   color: white; /* 버튼의 글자색을 설정합니다. */
   font-size: 18px; /* 버튼의 글자 크기를 설정합니다. */
@@ -88,7 +88,7 @@ input {
   bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
   right: 0; /* 버튼의 위치를 화면 오른쪽에 맞춥니다. */
   width: 50%; /* 버튼의 너비를 50%로 설정합니다. */
-  height: 200px; /* 버튼의 높이를 50px로 설정합니다. */
+  height: 20%; /* 버튼의 높이를 50px로 설정합니다. */
   background-color: #4CAF50; /* 버튼의 배경색을 설정합니다. */
   color: white; /* 버튼의 글자색을 설정합니다. */
   font-size: 18px; /* 버튼의 글자 크기를 설정합니다. */
