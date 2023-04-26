@@ -10,3 +10,12 @@ div > div > div {
   padding: 10px;
   /* 테두리와 텍스트 사이의 간격 */
 }
+input {
+  width: 50px;
+}
+button {
+  width: 58px;
+}
+.answer {
+  display: block;
+}

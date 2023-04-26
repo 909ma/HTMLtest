@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show/Hide Answer Example</title>
+    <style>
+      .answer {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="question" id="question1029">
+      <div>
+        <p>
+          Question 1029 : Groovy를 기반으로 한 오픈 소스 형태의 자동화 도구는?
+          <br />
+          안드로이드 앱 개발 환경에서 사용된다. <br />
+          안드로이드뿐만 아니라 플러그인을 설정하면, JAVA, C/C++, Python 등의
+          언어도 빌드할 수 있다. <br />
+          Groovy를 사용해서 만든 DSL(Domain Specific Language)을 스크립트 언어로
+          사용한다.
+          <br />
+        </p>
+        <br />
+        <div>
+          <br />
+          <p class="answer">Answer 1 : Gradle<br /></p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <button class="show">Show Answer</button>;
+    <script>
+      const answerBtn = document.querySelector(".show");
+      const answer = document.querySelector(".answer");
+
+      answerBtn.onclick = function () {
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          answerBtn.textContent = "Hide Answer";
+        } else {
+          answer.style.display = "none";
+          answerBtn.textContent = "Show Answer";
+        }
+      };
+    </script>
+  </body>
+</html>
