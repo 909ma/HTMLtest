@@ -2,7 +2,7 @@ let currentQuestionIndex = 1;
 const questionContainer = document.querySelector(".question-container");
 const questions = document.querySelectorAll(".question");
 const answerBtn = document.querySelector(".show");
-const answer = document.querySelector(".answer");
+const answers = document.querySelectorAll(".answer");
 
 //Next 기능
 function nextQuestion() {
@@ -61,14 +61,24 @@ document.addEventListener("keydown", function (event) {
 });
 
 //해답 보이기, 가리기 기능
+let count = 0;
 answerBtn.onclick = function () {
-  if (answer.style.display === "none") {
-    answer.style.display = "block";
-    //answer.forEach((answer) => (answer.style.display = "block"));
+  for (const iterator of answers) {
+    if (iterator.style.display === "none") {
+      iterator.style.display = "block";
+      //answer.forEach((answer) => (answer.style.display = "block"));
+      //answerBtn.textContent = "Hide";
+    } else {
+      iterator.style.display = "none";
+      //answer.forEach((answer) => (answer.style.display = "none"));
+      //answerBtn.textContent = "Show";
+    }
+  }
+
+  if (count % 2 == 0) {
     answerBtn.textContent = "Hide";
   } else {
-    answer.style.display = "none";
-    //answer.forEach((answer) => (answer.style.display = "none"));
     answerBtn.textContent = "Show";
   }
+  count++;
 };
