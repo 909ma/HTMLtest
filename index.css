@@ -42,7 +42,7 @@ input {
 .gotoB input {
   width: 50%;
   margin-right: 10px;
-  font-size: 80px;
+  font-size: 8vw;
   border: none;
   border-radius: 4px;
   padding: 5px;
@@ -53,7 +53,7 @@ input {
   height: 20%;
   background-color: #4caf50;
   color: white;
-  font-size: 80px;
+  font-size: 8vw;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -69,7 +69,7 @@ input {
   color: white; /* 버튼의 글자색을 설정합니다. */
   border: none; /* 버튼의 테두리를 없앱니다. */
   cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
-  font-size: 80px;
+  font-size: 8vw;
 }
 .show span {
   display: inline-block; /* span을 블록 요소로 설정합니다. */
@@ -86,7 +86,7 @@ input {
   color: white; /* 버튼의 글자색을 설정합니다. */
   border: none; /* 버튼의 테두리를 없앱니다. */
   cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
-  font-size: 80px;
+  font-size: 8vw;
 }
 .nextB {
   position: fixed; /* 버튼을 화면에서 고정시킵니다. */
@@ -98,7 +98,7 @@ input {
   color: white; /* 버튼의 글자색을 설정합니다. */
   border: none; /* 버튼의 테두리를 없앱니다. */
   cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
-  font-size: 80px;
+  font-size: 8vw;
 }
 @media screen and (max-width: 768px) {
   /* 화면이 모바일 크기일 때 버튼의 높이를 더 크게 설정합니다. */

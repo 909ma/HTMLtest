@@ -1,8 +1,8 @@
-let currentQuestionIndex = 1;
 const questionContainer = document.querySelector(".question-container");
 const questions = document.querySelectorAll(".question");
 const answerBtn = document.querySelector(".show");
 const answers = document.querySelectorAll(".answer");
+let currentQuestionIndex = questions.length;
 
 //Next 기능
 function nextQuestion() {
