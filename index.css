@@ -10,83 +10,86 @@ div > div > div {
   padding: 10px;
   /* 테두리와 텍스트 사이의 간격 */
 }
-input {
-  width: 50px;
-}
-.answer {
-  display: none;
-}
-.gotoB {
-  position: fixed;
-  bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
-  left: 150px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
-  width: 120px; /* 버튼의 너비를 50%로 설정합니다. */
-  height: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
 
-.gotoB input {
-  margin-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  height: 15px;
-  border: none;
-  border-radius: 5px;
-  padding: 0px;
-}
+@media screen and (min-width: 1286px) {
+  input {
+    width: 50px;
+  }
+  .answer {
+    display: none;
+  }
+  .gotoB {
+    position: fixed;
+    bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
+    left: 150px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
+    width: 120px; /* 버튼의 너비를 50%로 설정합니다. */
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
 
-.gotoB button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  .gotoB input {
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 0px;
+  }
 
-.show {
-  position: fixed; /* 버튼을 화면에서 고정시킵니다. */
-  bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
-  left: 100px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
-  width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
-  height: 20px;
-  background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
-  color: white; /* 버튼의 글자색을 설정합니다. */
-  border: none; /* 버튼의 테두리를 없앱니다. */
-  cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
-}
-.show span {
-  display: inline-block; /* span을 블록 요소로 설정합니다. */
-  margin-left: 10px; /* span의 왼쪽 마진을 10px로 설정합니다. */
-}
+  .gotoB button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-.backB {
-  position: fixed; /* 버튼을 화면에서 고정시킵니다. */
-  bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
-  left: 0; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
-  width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
-  height: 20px;
-  background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
-  color: white; /* 버튼의 글자색을 설정합니다. */
-  border: none; /* 버튼의 테두리를 없앱니다. */
-  cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
-}
-.nextB {
-  position: fixed; /* 버튼을 화면에서 고정시킵니다. */
-  bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
-  left: 50px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
-  width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
-  height: 20px;
-  background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
-  color: white; /* 버튼의 글자색을 설정합니다. */
-  border: none; /* 버튼의 테두리를 없앱니다. */
-  cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
+  .show {
+    position: fixed; /* 버튼을 화면에서 고정시킵니다. */
+    bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
+    left: 100px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
+    width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
+    height: 20px;
+    background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
+    color: white; /* 버튼의 글자색을 설정합니다. */
+    border: none; /* 버튼의 테두리를 없앱니다. */
+    cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
+  }
+  .show span {
+    display: inline-block; /* span을 블록 요소로 설정합니다. */
+    margin-left: 10px; /* span의 왼쪽 마진을 10px로 설정합니다. */
+  }
+
+  .backB {
+    position: fixed; /* 버튼을 화면에서 고정시킵니다. */
+    bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
+    left: 0; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
+    width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
+    height: 20px;
+    background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
+    color: white; /* 버튼의 글자색을 설정합니다. */
+    border: none; /* 버튼의 테두리를 없앱니다. */
+    cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
+  }
+  .nextB {
+    position: fixed; /* 버튼을 화면에서 고정시킵니다. */
+    bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
+    left: 50px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
+    width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
+    height: 20px;
+    background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
+    color: white; /* 버튼의 글자색을 설정합니다. */
+    border: none; /* 버튼의 테두리를 없앱니다. */
+    cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
+  }
 }
 /* 아이폰 13 프로 맥스 크기 고려해서 1284 */
 @media screen and (max-width: 1285px) {
