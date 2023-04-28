@@ -21,7 +21,7 @@ input {
   width: 50px;
 }
 .answer {
-  display: block;
+  display: none;
 }
 .gotoB {
   position: fixed;
