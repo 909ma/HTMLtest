@@ -39,7 +39,7 @@ div > div > div {
   .gotoB {
     position: fixed;
     bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
-    left: 150px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
+    right: 150px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
     width: 120px; /* 버튼의 너비를 50%로 설정합니다. */
     height: 20px;
     display: flex;
@@ -73,7 +73,7 @@ div > div > div {
   .show {
     position: fixed; /* 버튼을 화면에서 고정시킵니다. */
     bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
-    left: 100px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
+    right: 100px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
     width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
     height: 20px;
     background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
@@ -89,7 +89,7 @@ div > div > div {
   .backB {
     position: fixed; /* 버튼을 화면에서 고정시킵니다. */
     bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
-    left: 0; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
+    right: 50px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
     width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
     height: 20px;
     background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
@@ -100,7 +100,7 @@ div > div > div {
   .nextB {
     position: fixed; /* 버튼을 화면에서 고정시킵니다. */
     bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
-    left: 50px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
+    right: 0px; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
     width: 50px; /* 버튼의 너비를 50%로 설정합니다. */
     height: 20px;
     background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
