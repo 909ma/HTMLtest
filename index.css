@@ -19,6 +19,9 @@ p {
 .question-container .question.active {
   display: block;
 }
+.help {
+  display: block;
+}
 div > div > div {
   border: 1px solid black;
   /* 테두리 두께와 색상 */
@@ -26,7 +29,7 @@ div > div > div {
   /* 테두리와 텍스트 사이의 간격 */
 }
 /* 430 x 932 */
-@media screen and (min-width: 933px) {
+@media screen and (min-width: 1291px) {
   input {
     width: 50px;
   }
@@ -107,8 +110,8 @@ div > div > div {
   }
 }
 
-/* 아이폰 13 프로 맥스 크기 고려해서 430*932 */
-@media screen and (max-width: 932px) {
+/* 아이폰 13 프로 맥스 크기 고려해서 430*932. 이렇게 하니까 안 되네. 1290 기준으로 ㄱ*/
+@media screen and (max-width: 1290px) {
   body {
     /* 본문 스타일 */
     height: 2000px; /* 본문이 길어질 경우 스크롤이 생기도록 높이를 지정해줍니다. */
