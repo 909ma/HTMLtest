@@ -11,7 +11,8 @@ div > div > div {
   /* 테두리와 텍스트 사이의 간격 */
 }
 
-@media screen and (max-width: 768px) {
+/* 아이폰 13 프로 맥스 크기 고려해서 1284 */
+@media screen and (max-width: 1284px) {
   body {
     /* 본문 스타일 */
     height: 2000px; /* 본문이 길어질 경우 스크롤이 생기도록 높이를 지정해줍니다. */
