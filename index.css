@@ -1,3 +1,18 @@
+/* 네이버 폰트 사용 
+<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+font-family: 'NanumSquareLight';
+font-family: 'NanumSquare';
+font-family: 'NanumSquareBold';
+font-family: 'NanumSquareExtraBold';
+font-family: 'NanumSquareAcb';
+font-family: 'NanumSquareAceb';
+font-family: 'NanumSquareAcl';
+font-family: 'NanumSquareAcr';
+*/
+p {
+  font-size: 20px;
+  font-family: "NanumSquareBold";
+}
 .question-container .question {
   display: none;
 }
@@ -10,8 +25,8 @@ div > div > div {
   padding: 10px;
   /* 테두리와 텍스트 사이의 간격 */
 }
-
-@media screen and (min-width: 1286px) {
+/* 430 x 932 */
+@media screen and (min-width: 933px) {
   input {
     width: 50px;
   }
@@ -91,14 +106,15 @@ div > div > div {
     cursor: pointer; /* 버튼 위에 마우스를 올리면 커서 모양이 바뀝니다. */
   }
 }
-/* 아이폰 13 프로 맥스 크기 고려해서 1284 */
-@media screen and (max-width: 1285px) {
+
+/* 아이폰 13 프로 맥스 크기 고려해서 430*932 */
+@media screen and (max-width: 932px) {
   body {
     /* 본문 스타일 */
     height: 2000px; /* 본문이 길어질 경우 스크롤이 생기도록 높이를 지정해줍니다. */
   }
   p {
-    font-size: 40px;
+    font-size: 20px;
   }
   input {
     width: 50px;
@@ -108,14 +124,14 @@ div > div > div {
   }
   .gotoB {
     position: fixed;
-    bottom: 20%;
+    bottom: 12%;
     left: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 20%;
+    height: 12%;
     background-color: #4caf50;
     color: white;
     border: none;
@@ -124,7 +140,9 @@ div > div > div {
 
   .gotoB input {
     width: 50%;
-    margin-right: 10px;
+    margin-right: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 8vw;
     border: none;
     border-radius: 4px;
@@ -133,8 +151,9 @@ div > div > div {
 
   .gotoB button {
     width: 50%;
-    height: 20%;
+    height: 12%;
     background-color: #4caf50;
+    margin-bottom: 10%;
     color: white;
     font-size: 8vw;
     border: none;
@@ -144,10 +163,10 @@ div > div > div {
 
   .show {
     position: fixed; /* 버튼을 화면에서 고정시킵니다. */
-    bottom: 20%; /* 버튼의 위치를 화면 하단에 맞춥니다. */
+    bottom: 12%; /* 버튼의 위치를 화면 하단에 맞춥니다. */
     right: 0; /* 버튼의 위치를 화면 오른쪽에 맞춥니다. */
     width: 50%; /* 버튼의 너비를 50%로 설정합니다. */
-    height: 20%; /* 버튼의 높이를 50px로 설정합니다. */
+    height: 12%; /* 버튼의 높이를 50px로 설정합니다. */
     background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
     color: white; /* 버튼의 글자색을 설정합니다. */
     border: none; /* 버튼의 테두리를 없앱니다. */
@@ -164,7 +183,7 @@ div > div > div {
     bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
     left: 0; /* 버튼의 위치를 화면 왼쪽에 맞춥니다. */
     width: 50%; /* 버튼의 너비를 50%로 설정합니다. */
-    height: 20%; /* 버튼의 높이를 50px로 설정합니다. */
+    height: 12%; /* 버튼의 높이를 50px로 설정합니다. */
     background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
     color: white; /* 버튼의 글자색을 설정합니다. */
     border: none; /* 버튼의 테두리를 없앱니다. */
@@ -176,7 +195,7 @@ div > div > div {
     bottom: 0; /* 버튼의 위치를 화면 하단에 맞춥니다. */
     right: 0; /* 버튼의 위치를 화면 오른쪽에 맞춥니다. */
     width: 50%; /* 버튼의 너비를 50%로 설정합니다. */
-    height: 20%; /* 버튼의 높이를 50px로 설정합니다. */
+    height: 12%; /* 버튼의 높이를 50px로 설정합니다. */
     background-color: #4caf50; /* 버튼의 배경색을 설정합니다. */
     color: white; /* 버튼의 글자색을 설정합니다. */
     border: none; /* 버튼의 테두리를 없앱니다. */
