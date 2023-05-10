@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "question": "What is the capital of France?",
-      "answer": "Paris"
+      "Question1": "What is the capital of France?",
+      "Answer": "Paris"
     },
     {
-      "question": "Who painted the Mona Lisa?",
+      "Question2": "Who painted the Mona Lisa?",
       "answer": "Leonardo da Vinci"
     },
     {
-      "question": "What is the chemical symbol for gold?",
+      "Question3": "What is the chemical symbol for gold?",
       "answer": "Au"
     }
   ]
