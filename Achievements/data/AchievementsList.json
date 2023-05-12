@@ -99,8 +99,8 @@
   },
   {
     "image name": "오버쿡드.jpg",
-    "title": "오버쿡드",
-    "value": "오버쿡드를 클리어했다!",
+    "title": "오버쿡드2",
+    "value": "오버쿡드2를 클리어했다!",
     "now": 0,
     "max": 100
   },
@@ -163,7 +163,28 @@
   {
     "image name": "The Case of the Golden Idol.png",
     "title": "골든 아이돌",
-    "value": "The Case of the Golden Idol 클리어했다!",
+    "value": "The Case of the Golden Idol을 클리어했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "카타나제로.png",
+    "title": "카타나제로",
+    "value": "KATANA ZERO를 클리어했다!",
+    "now": 100,
+    "max": 100
+  },
+  {
+    "image name": "스카이림.png",
+    "title": "스카이림",
+    "value": "SKYRIM을 클리어했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "네크로댄서.jpg",
+    "title": "네크로댄서",
+    "value": "CRYPT OF THE NECRODANCER를 클리어했다!",
     "now": 0,
     "max": 100
   }
