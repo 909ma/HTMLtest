@@ -28,13 +28,6 @@
     "max": 100
   },
   {
-    "image name": "엘든링.webp",
-    "title": "엘든링",
-    "value": "엘든링을 깼다!",
-    "now": 66.6,
-    "max": 100
-  },
-  {
     "image name": "몬헌월드.webp",
     "title": "몬헌월드",
     "value": "몬스터헌터 월드의 헌터 랭크 999를 달성했다!",
@@ -61,6 +54,48 @@
     "value": "몬스터헌터 라이즈 썬브레이크의 마스터 랭크 999를 달성했다!",
     "now": 50,
     "max": 999
+  },
+  {
+    "image name": "엘든링.webp",
+    "title": "엘든링",
+    "value": "엘든링을 깼다!",
+    "now": 66.6,
+    "max": 100
+  },
+  {
+    "image name": "테라리아.png",
+    "title": "테라리아",
+    "value": "테라리아를 클리어했다!",
+    "now": 100,
+    "max": 100
+  },
+  {
+    "image name": "칼라미티.jpg",
+    "title": "테라리아 칼라미티 모드",
+    "value": "테라리아 칼라미티 모드를 클리어했다!",
+    "now": 100,
+    "max": 100
+  },
+  {
+    "image name": "스카이림.png",
+    "title": "스카이림",
+    "value": "SKYRIM을 클리어했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "카타나제로.png",
+    "title": "카타나제로",
+    "value": "KATANA ZERO를 클리어했다!",
+    "now": 100,
+    "max": 100
+  },
+  {
+    "image name": "로보토미 코퍼레이션.jpg",
+    "title": "로보토미",
+    "value": "로보토미 코퍼레이션을 클리어했다!",
+    "now": 40,
+    "max": 45
   },
   {
     "image name": "페이퍼플리즈.png",
@@ -105,20 +140,6 @@
     "max": 100
   },
   {
-    "image name": "테라리아.png",
-    "title": "테라리아",
-    "value": "테라리아를 클리어했다!",
-    "now": 100,
-    "max": 100
-  },
-  {
-    "image name": "칼라미티.jpg",
-    "title": "테라리아 칼라미티 모드",
-    "value": "테라리아 칼라미티 모드를 클리어했다!",
-    "now": 100,
-    "max": 100
-  },
-  {
     "image name": "Touhou Mystia Izakaya_103.ico",
     "title": "동방야작식당",
     "value": "동방야작식당을 클리어했다!",
@@ -154,30 +175,9 @@
     "max": 100
   },
   {
-    "image name": "로보토미 코퍼레이션.jpg",
-    "title": "로보토미",
-    "value": "로보토미 코퍼레이션을 클리어했다!",
-    "now": 40,
-    "max": 45
-  },
-  {
     "image name": "The Case of the Golden Idol.png",
     "title": "골든 아이돌",
     "value": "The Case of the Golden Idol을 클리어했다!",
-    "now": 0,
-    "max": 100
-  },
-  {
-    "image name": "카타나제로.png",
-    "title": "카타나제로",
-    "value": "KATANA ZERO를 클리어했다!",
-    "now": 100,
-    "max": 100
-  },
-  {
-    "image name": "스카이림.png",
-    "title": "스카이림",
-    "value": "SKYRIM을 클리어했다!",
     "now": 0,
     "max": 100
   },
