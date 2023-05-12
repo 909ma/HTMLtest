@@ -14,6 +14,20 @@
     "max": 100
   },
   {
+    "image name": "리마1급.png",
+    "title": "리눅스마스터 1급",
+    "value": "리눅스마스터 1급을 취득했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "투자자산운용사.png",
+    "title": "투자자산운용사",
+    "value": "투자자산운용사를 취득했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
     "image name": "엘든링.webp",
     "title": "엘든링",
     "value": "엘든링을 깼다!",
@@ -143,8 +157,8 @@
     "image name": "로보토미 코퍼레이션.jpg",
     "title": "로보토미",
     "value": "로보토미 코퍼레이션을 클리어했다!",
-    "now": 0,
-    "max": 100
+    "now": 40,
+    "max": 45
   },
   {
     "image name": "The Case of the Golden Idol.png",
