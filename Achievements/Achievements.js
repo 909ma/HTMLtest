@@ -37,10 +37,11 @@ function createAchievementTable(achievements) {
     row.appendChild(valueCell);
 
     var progressCell = document.createElement("td");
-    progressCell.textContent = achievement.progress + "%";
+    var progress = (achievement.now / achievement.max) * 100;
+    progressCell.textContent = `${progress.toFixed(1)}%`;
     row.appendChild(progressCell);
 
-    row.style.background = `linear-gradient(90deg, #4caf50 ${achievement.progress}%, transparent ${achievement.progress}%)`;
+    row.style.background = `linear-gradient(90deg, #4caf50 ${progress}%, transparent ${progress}%)`;
 
     table.appendChild(row);
   });
