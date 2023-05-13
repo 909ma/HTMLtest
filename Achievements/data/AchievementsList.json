@@ -70,7 +70,7 @@
     "max": 100
   },
   {
-    "image name": "칼라미티.jpg",
+    "image name": "테라리아칼라미티.png",
     "title": "테라리아 칼라미티 모드",
     "value": "테라리아 칼라미티 모드를 클리어했다!",
     "now": 100,
@@ -84,11 +84,25 @@
     "max": 100
   },
   {
+    "image name": "factorio.png",
+    "title": "팩토리오",
+    "value": "팩토리오 로켓을 발사했다!",
+    "now": 100,
+    "max": 100
+  },
+  {
     "image name": "카타나제로.png",
     "title": "카타나제로",
     "value": "KATANA ZERO를 클리어했다!",
     "now": 100,
     "max": 100
+  },
+  {
+    "image name": "휴먼폴플랫.png",
+    "title": "휴먼 폴 플랫",
+    "value": "Human Fall Flat을 클리어했다!",
+    "now": 23,
+    "max": 24
   },
   {
     "image name": "로보토미 코퍼레이션.jpg",
@@ -122,13 +136,6 @@
     "image name": "GTFO.png",
     "title": "GTFO",
     "value": "GTFO를 클리어했다!",
-    "now": 0,
-    "max": 100
-  },
-  {
-    "image name": "휴먼폴플랫.png",
-    "title": "휴먼 폴 플랫",
-    "value": "휴먼 폴 플랫을 클리어했다!",
     "now": 0,
     "max": 100
   },
@@ -185,6 +192,41 @@
     "image name": "네크로댄서.jpg",
     "title": "네크로댄서",
     "value": "CRYPT OF THE NECRODANCER를 클리어했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "마크.png",
+    "title": "마크",
+    "value": "마인크래프트 엔더드래곤을 잡았다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "factorio우탐모.png",
+    "title": "팩토리오",
+    "value": "팩토리오 우주탐사모드를 클리어했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "ksp.jpg",
+    "title": "커버스페이스프로그램",
+    "value": "KERBAL SPACE PROGRAM 로켓을 발사했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "스타.png",
+    "title": "스타1",
+    "value": "스타크래프트 1 캠페인을 모두 완료했다!",
+    "now": 0,
+    "max": 100
+  },
+  {
+    "image name": "스2.webp",
+    "title": "스타2",
+    "value": "스타크래프트 2 캠페인을 모두 완료했다!",
     "now": 0,
     "max": 100
   }
