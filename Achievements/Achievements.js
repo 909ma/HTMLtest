@@ -41,7 +41,8 @@ function createAchievementTable(achievements) {
     progressCell.textContent = `${progress.toFixed(1)}%`;
     row.appendChild(progressCell);
 
-    row.style.background = `linear-gradient(90deg, #4caf50 ${progress}%, transparent ${progress}%)`;
+    row.style.background = `-webkit-linear-gradient(90deg, #4caf50 ${progress}%, transparent ${progress}%)`;
+
 
     table.appendChild(row);
   });
