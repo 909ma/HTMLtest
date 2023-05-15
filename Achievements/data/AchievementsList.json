@@ -229,5 +229,12 @@
     "value": "스타크래프트 2 캠페인을 모두 완료했다!",
     "now": 0,
     "max": 100
+  },
+  {
+    "image name": "슈타게.png",
+    "title": "슈타게",
+    "value": "Steins; Gate를 클리어했다!",
+    "now": 0,
+    "max": 100
   }
 ]
