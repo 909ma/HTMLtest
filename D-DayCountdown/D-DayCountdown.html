@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D-Day Countdown</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      table {
+        width: 600px;
+        border-collapse: collapse;
+        margin: auto;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      #todayDate {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>D-Day Countdown</h1>
+    <div id="todayDate"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>D-Day</th>
+          <th>Remaining Days</th>
+        </tr>
+      </thead>
+      <tbody id="countdownTableBody"></tbody>
+    </table>
+
+    <script>
+      // Function to update countdown
+      function updateCountdown(name, targetDateString) {
+        // Set the target date (D-Day)
+        var targetDate = new Date(targetDateString);
+        var targetYear = targetDate.getFullYear();
+        var targetMonth = ("0" + (targetDate.getMonth() + 1)).slice(-2);
+        var targetDay = ("0" + targetDate.getDate()).slice(-2);
+        var formattedTargetDate =
+          targetYear + "-" + targetMonth + "-" + targetDay;
+
+        // Calculate the remaining days
+        var today = new Date();
+        var timeDiff = targetDate.getTime() - today.getTime();
+        var remainingDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+        // Create a new row in the table
+        var row = $("<tr></tr>");
+        row.append("<td>" + name + "</td>");
+        row.append("<td>" + formattedTargetDate + "</td>");
+        if (remainingDays >= 0) {
+          row.append("<td>" + remainingDays + "일</td>");
+        } else {
+          row.append("<td>+" + Math.abs(remainingDays) + "일</td>");
+        }
+
+        // Append the row to the table body
+        $("#countdownTableBody").append(row);
+      }
+
+      // Load JSON data using Ajax
+      $.ajax({
+        url: "data/data.json",
+        dataType: "json",
+        success: function (data) {
+          // Update the Today date in the header
+          var today = new Date();
+          var year = today.getFullYear();
+          var month = ("0" + (today.getMonth() + 1)).slice(-2);
+          var day = ("0" + today.getDate()).slice(-2);
+          var formattedToday = year + "-" + month + "-" + day;
+          $("#todayDate").text("Today: " + formattedToday);
+
+          // Iterate over each item in the JSON data
+          for (var i = 0; i < data.length; i++) {
+            var item = data[i];
+            var name = item.name;
+            var date = item.date;
+            updateCountdown(name, date);
+          }
+        },
+        error: function () {
+          alert("Failed to load JSON data.");
+        },
+      });
+    </script>
+  </body>
+</html>
