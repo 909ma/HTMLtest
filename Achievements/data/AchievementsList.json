@@ -3,7 +3,7 @@
     "image name": "디비니티2.png",
     "title": "디비니티2",
     "value": "Divinity: Original Sin 2를 깼다!",
-    "now": 50,
+    "now": 75,
     "max": 100
   },
   {
@@ -26,6 +26,13 @@
     "value": "투자자산운용사를 취득했다!",
     "now": 0,
     "max": 100
+  },
+  {
+    "image name": "백준플레.svg",
+    "title": "백준",
+    "value": "백준 플래티넘5를 달성했다!",
+    "now": 138,
+    "max": 1600
   },
   {
     "image name": "몬헌월드.webp",
