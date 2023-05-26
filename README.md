@@ -6,3 +6,8 @@
 
 ![본인ID's github stats](https://github-readme-stats.vercel.app/api?username=909ma&show_icons=true)  
 [![본인ID's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=909ma&show_icons=true&hide_border=true&title_color=004386&icon_color=004386&layout=compact)](https://github.com/909ma)
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=xn132hb7)](https://solved.ac/xn132hb7/)
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=xn132hb7)](https://solved.ac/xn132hb7)
