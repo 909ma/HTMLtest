@@ -1,9 +1,9 @@
 [
   {
-    "image name": "디비니티2.png",
-    "title": "디비니티2",
-    "value": "Divinity: Original Sin 2를 깼다!",
-    "now": 95,
+    "image name": "딥락갤럭틱.webp",
+    "title": "딥 락 갤럭틱",
+    "value": "Deep Rock Galactic을 클리어했다!",
+    "now": 0,
     "max": 100
   },
   {
@@ -31,7 +31,7 @@
     "image name": "백준플레.svg",
     "title": "백준",
     "value": "백준 플래티넘5를 달성했다!",
-    "now": 453,
+    "now": 484,
     "max": 1600
   },
   {
@@ -84,6 +84,13 @@
     "max": 100
   },
   {
+    "image name": "디비니티2.png",
+    "title": "디비니티2",
+    "value": "Divinity: Original Sin 2를 깼다!",
+    "now": 100,
+    "max": 100
+  },
+  {
     "image name": "스카이림.png",
     "title": "스카이림",
     "value": "SKYRIM을 클리어했다!",
@@ -129,13 +136,6 @@
     "image name": "바로트라우마.jpg",
     "title": "바로트라우마",
     "value": "Barotrauma를 클리어했다!",
-    "now": 0,
-    "max": 100
-  },
-  {
-    "image name": "딥락갤럭틱.webp",
-    "title": "딥 락 갤럭틱",
-    "value": "Deep Rock Galactic을 클리어했다!",
     "now": 0,
     "max": 100
   },
