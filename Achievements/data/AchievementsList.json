@@ -9,8 +9,8 @@
   {
     "image name": "딥락갤럭틱.webp",
     "title": "딥 락 갤럭틱",
-    "value": "Deep Rock Galactic을 클리어했다!",
-    "now": 0,
+    "value": "Deep Rock Galactic 딥 다이브 엘리트를 클리어했다!",
+    "now": 50,
     "max": 100
   },
   {
@@ -38,7 +38,7 @@
     "image name": "백준플레.svg",
     "title": "백준",
     "value": "백준 플래티넘5를 달성했다!",
-    "now": 503,
+    "now": 519,
     "max": 1600
   },
   {
