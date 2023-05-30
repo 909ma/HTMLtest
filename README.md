@@ -1,13 +1,17 @@
-# HTML5+CSS3+Java Script
+<div align="center">
 
-- https://909ma.github.io/
+# 909ma
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=909ma)](https://github.com/ryo-ma/github-profile-trophy)
+[https://909ma.github.io/](https://909ma.github.io/)
 
-![본인ID's github stats](https://github-readme-stats.vercel.app/api?username=909ma&show_icons=true)  
-[![본인ID's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=909ma&show_icons=true&hide_border=true&title_color=004386&icon_color=004386&layout=compact)](https://github.com/909ma)
+<br>
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=xn132hb7)](https://solved.ac/xn132hb7/)
+<img align="center" src="http://mazandi.herokuapp.com/api?handle=xn132hb7&theme=warm" style="width: 60%;">
 
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=xn132hb7)](https://solved.ac/xn132hb7)
+<br>
+
+<a href="https://github.com/909ma/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=909ma&hide=html,css,PLSQL" alt="Top Languages" style="width: 60%;">
+</a>
+
+</div>
