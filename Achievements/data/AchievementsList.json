@@ -3,8 +3,8 @@
     "image name": "8비트레이드.gif",
     "title": "8비트레이드",
     "value": "8 Bit Raid 노말 난이도를 클리어했다!",
-    "now": 0,
-    "max": 100
+    "now": 8,
+    "max": 9
   },
   {
     "image name": "딥락갤럭틱.webp",
@@ -38,7 +38,7 @@
     "image name": "백준플레.svg",
     "title": "백준",
     "value": "백준 플래티넘5를 달성했다!",
-    "now": 519,
+    "now": 530,
     "max": 1600
   },
   {
