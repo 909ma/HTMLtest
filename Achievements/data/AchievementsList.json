@@ -112,6 +112,48 @@
     "max": 100
   },
   {
+    "image name": "GTFO.png",
+    "title": "GTFO",
+    "value": "GTFO를 올클리어했다!",
+    "now": 0,
+    "max": 5
+  },
+  {
+    "image name": "GTFOR1.png",
+    "title": "GTFO",
+    "value": "GTFO Rundown 1을 클리어했다!",
+    "now": 4,
+    "max": 6
+  },
+  {
+    "image name": "GTFOR2.png",
+    "title": "GTFO",
+    "value": "GTFO Rundown 2을 클리어했다!",
+    "now": 0,
+    "max": 10
+  },
+  {
+    "image name": "GTFOR3.png",
+    "title": "GTFO",
+    "value": "GTFO Rundown 3을 클리어했다!",
+    "now": 0,
+    "max": 7
+  },
+  {
+    "image name": "GTFOR4.png",
+    "title": "GTFO",
+    "value": "GTFO Rundown 4을 클리어했다!",
+    "now": 0,
+    "max": 12
+  },
+  {
+    "image name": "GTFOR7.png",
+    "title": "GTFO",
+    "value": "GTFO Rundown 7을 클리어했다!",
+    "now": 0,
+    "max": 10
+  },
+  {
     "image name": "카타나제로.png",
     "title": "카타나제로",
     "value": "KATANA ZERO를 클리어했다!",
@@ -143,13 +185,6 @@
     "image name": "바로트라우마.jpg",
     "title": "바로트라우마",
     "value": "Barotrauma를 클리어했다!",
-    "now": 0,
-    "max": 100
-  },
-  {
-    "image name": "GTFO.png",
-    "title": "GTFO",
-    "value": "GTFO를 클리어했다!",
     "now": 0,
     "max": 100
   },
