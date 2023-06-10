@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>분석 결과</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+</head>
+<body>
+  <h1>분석 결과</h1>
+
+  <h2>스크린샷 화면</h2>
+  <img src="screenshot.jpg" alt="스크린샷 화면">
+
+  <h2>간단한 수치 분석표</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>항목</th>
+        <th>값</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>항목 1</td>
+        <td>값 1</td>
+      </tr>
+      <tr>
+        <td>항목 2</td>
+        <td>값 2</td>
+      </tr>
+      <tr>
+        <td>항목 3</td>
+        <td>값 3</td>
+      </tr>
+      <!-- 추가적인 행들을 필요에 따라 이어서 작성 -->
+    </tbody>
+  </table>
+
+  <h2>분석표에 따른 레이더 차트</h2>
+  <canvas id="radarChart"></canvas>
+
+  <script>
+    // 레이더 차트 데이터
+    var radarData = {
+      labels: ["라벨 1", "라벨 2", "라벨 3", "라벨 4", "라벨 5"],
+      datasets: [{
+        label: "데이터셋",
+        backgroundColor: "rgba(75, 192, 192, 0.2)",
+        borderColor: "rgba(75, 192, 192, 1)",
+        pointBackgroundColor: "rgba(75, 192, 192, 1)",
+        pointBorderColor: "#fff",
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "rgba(75, 192, 192, 1)",
+        data: [3, 2, 5, 4, 1]
+      }]
+    };
+
+    // 레이더 차트 옵션
+    var radarOptions = {
+      scale: {
+        ticks: {
+          beginAtZero: true,
+          min: 0,
+          max: 6,
+          stepSize: 1
+        }
+      }
+    };
+
+    // 레이더 차트 생성
+    var ctx = document.getElementById("radarChart").getContext("2d");
+    new Chart(ctx, {
+      type: 'radar',
+      data: radarData,
+      options: radarOptions
+    });
+  </script>
+</body>
+</html>
