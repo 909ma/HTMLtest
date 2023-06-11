@@ -1,0 +1,57 @@
+/* style.css */
+
+/* 전체 페이지 스타일 */
+* {
+  font-family: "NanumSquare";
+}
+body {
+  line-height: 1.5;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* 선택 가능한 업적 스타일 */
+#achievementSelect {
+  padding: 5px;
+  font-size: 16px;
+  margin: 0 auto; /* 가운데 정렬 */
+  display: block; /* 블록 요소로 설정하여 수평 가운데 정렬 적용 */
+}
+
+/* 업적 제목 스타일 */
+#achievementTitle {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center; /* 가운데 정렬 */
+}
+
+/* 업적 내용 스타일 */
+#achievementContent {
+  margin-bottom: 20px;
+  text-align: center; /* 가운데 정렬 */
+  font-size: 32px;
+}
+
+/* 스크린샷 이미지 스타일 */
+#screenshot {
+  max-width: 100%;
+  margin: 0 auto 20px; /* 수평 가운데 정렬 */
+  display: block; /* 블록 요소로 설정하여 수평 가운데 정렬 적용 */
+}
+
+/* 레이더 차트 컨테이너 스타일 */
+#radarChart {
+  max-width: auto;
+  margin: 0 auto; /* 수평 가운데 정렬 */
+}

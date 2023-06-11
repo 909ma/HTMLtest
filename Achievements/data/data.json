@@ -9,14 +9,14 @@
     {
       "title": "8비트레이드",
       "content": "8비트 레이드에 대한 내용입니다.",
-      "screenshot": "screenshot1.jpg",
+      "screenshot": "테스트0.jpg",
       "labels": ["라벨 1", "라벨 2", "라벨 3", "라벨 4", "라벨 5"],
       "data": [5, 5, 5, 5, 5]
     },
     {
       "title": "GTFO",
       "content": "GTFO에 대한 내용입니다.",
-      "screenshot": "screenshot2.jpg",
+      "screenshot": "테스트1.jpg",
       "labels": ["라벨 1", "라벨 2", "라벨 3", "라벨 4", "라벨 5"],
       "data": [3, 3, 3, 3, 3]
     }
