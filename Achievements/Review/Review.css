@@ -39,7 +39,7 @@ h2 {
 /* 업적 내용 스타일 */
 #achievementContent {
   margin-bottom: 20px;
-  text-align: center; /* 가운데 정렬 */
+  /* text-align: center;  가운데 정렬 */
   font-size: 32px;
 }
 

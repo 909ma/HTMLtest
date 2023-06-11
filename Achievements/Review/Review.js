@@ -21,6 +21,10 @@ fetch("../data/data.json")
           min: Number(chartData.min),
           max: Number(chartData.max),
           stepSize: Number(chartData.stepSize),
+          fontSize: 24, // 원하는 폰트 크기로 설정 (예: 60) 스텝 크기
+        },
+        pointLabels: {
+          fontSize: 24, // 원하는 폰트 크기로 설정 (예: 24) 라벨 크기
         },
       },
     };
