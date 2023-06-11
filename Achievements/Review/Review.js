@@ -105,6 +105,24 @@ fetch("../data/data.json")
           image.src = "./Screenshot/" + item.value;
 
           contentElement.appendChild(imageContainer);
+        } else if (item.type === "table") {
+          // 테이블 항목인 경우
+          var table = document.createElement("table");
+          var tbody = document.createElement("tbody");
+
+          item.value.forEach((row) => {
+            var tr = document.createElement("tr");
+            row.forEach((cell) => {
+              var td = document.createElement("td");
+              td.textContent = cell;
+              tr.appendChild(td);
+            });
+
+            tbody.appendChild(tr);
+          });
+
+          table.appendChild(tbody);
+          contentElement.appendChild(table);
         }
       });
 

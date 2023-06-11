@@ -47,6 +47,13 @@ h2 {
   max-width: 1024px;
   margin: 0 auto;
 }
+/* 테이블 스타일 */
+table {
+  margin: auto; /* 가운데 정렬 */
+  margin-top: 20px; /* 위쪽 여백 조정 */
+  margin-bottom: 20px; /* 위쪽 여백 조정 */
+  width: auto; /* 테이블의 너비를 지정 (예: 50%) */
+}
 
 /* 스크린샷 이미지 스타일 */
 #screenshot-container {
