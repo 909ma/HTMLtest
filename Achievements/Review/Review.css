@@ -45,13 +45,24 @@ h2 {
 
 /* 스크린샷 이미지 스타일 */
 #screenshot {
-  max-width: 100%;
+  max-width: 1024px;
   margin: 0 auto 20px; /* 수평 가운데 정렬 */
   display: block; /* 블록 요소로 설정하여 수평 가운데 정렬 적용 */
 }
 
 /* 레이더 차트 컨테이너 스타일 */
 #radarChart {
-  max-width: auto;
-  margin: 0 auto; /* 수평 가운데 정렬 */
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  max-height: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#radarChart canvas {
+  max-width: 100%;
+  max-height: 100%;
 }
