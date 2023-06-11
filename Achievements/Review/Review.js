@@ -1,11 +1,13 @@
 // JSON 데이터를 비동기적으로 가져오기
-fetch("./data/list.json")
-  .then((response) => response.json())
-  .then((jsonData) => {
+Promise.all([
+  fetch("./data/ChartSetting.json").then((response) => response.json()),
+  fetch("./data/list.json").then((response) => response.json()),
+])
+  .then(([chartData, jsonData]) => {
     var selectElement = document.getElementById("achievementSelect");
 
     // 선택 가능한 옵션 추가
-    jsonData.reviewList.forEach((review) => {
+    jsonData.forEach((review) => {
       var option = document.createElement("option");
       option.value = review.title;
       option.text = review.title;
@@ -13,14 +15,13 @@ fetch("./data/list.json")
     });
 
     // radarOptions 데이터 가져오기
-    var chartData = jsonData.chartData;
     var radarOptions = {
       scale: {
         ticks: {
-          beginAtZero: chartData.beginAtZero,
-          min: chartData.min,
-          max: chartData.max,
-          stepSize: chartData.stepSize,
+          beginAtZero: chartData.chartData.beginAtZero,
+          min: chartData.chartData.min,
+          max: chartData.chartData.max,
+          stepSize: chartData.chartData.stepSize,
           fontSize: 20, // 원하는 폰트 크기로 설정 (예: 60) 스텝 크기
         },
         pointLabels: {
