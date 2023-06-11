@@ -6,9 +6,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
   </head>
   <body>
-    <h1 id="title">분석 결과</h1>
+    <h1>분석 결과</h1>
 
-    <div id="content"></div>
+    <h2>선택 가능한 업적</h2>
+    <select
+      id="achievementSelect"
+      onchange="loadAchievementContent()"
+      selectedIndex="-1"
+    >
+      <option value="" disabled selected>업적 선택</option>
+    </select>
+
+    <h2 id="achievementTitle"></h2>
+    <div id="achievementContent"></div>
 
     <h2>스크린샷 화면</h2>
     <img id="screenshot" src="" alt="스크린샷 화면" />
@@ -21,18 +31,32 @@
       fetch("../data/data.json")
         .then((response) => response.json())
         .then((jsonData) => {
-          // 제목 설정
-          document.getElementById("title").textContent = jsonData.title;
+          var selectElement = document.getElementById("achievementSelect");
 
-          // 본문 내용 설정
-          document.getElementById("content").innerHTML = jsonData.content;
+          // 선택 가능한 옵션 추가
+          jsonData.AchievementsList.forEach((achievement) => {
+            var option = document.createElement("option");
+            option.value = achievement.title;
+            option.text = achievement.title;
+            selectElement.add(option);
+          });
 
-          // 스크린샷 이미지 설정
-          document.getElementById("screenshot").src = jsonData.screenshot;
+          // radarOptions 데이터 가져오기
+          var chartData = jsonData.chartData;
+          var radarOptions = {
+            scale: {
+              ticks: {
+                beginAtZero: chartData.beginAtZero === "true",
+                min: Number(chartData.min),
+                max: Number(chartData.max),
+                stepSize: Number(chartData.stepSize),
+              },
+            },
+          };
 
-          // 레이더 차트 데이터 설정
+          // 레이더 차트 생성
           var radarData = {
-            labels: jsonData.labels,
+            labels: [],
             datasets: [
               {
                 label: "데이터셋",
@@ -42,24 +66,11 @@
                 pointBorderColor: "#fff",
                 pointHoverBackgroundColor: "#fff",
                 pointHoverBorderColor: "rgba(75, 192, 192, 1)",
-                data: jsonData.data,
+                data: [],
               },
             ],
           };
 
-          // 레이더 차트 옵션 설정
-          var radarOptions = {
-            scale: {
-              ticks: {
-                beginAtZero: true,
-                min: 0,
-                max: 6,
-                stepSize: 1,
-              },
-            },
-          };
-
-          // 레이더 차트 생성
           var ctx = document.getElementById("radarChart").getContext("2d");
           new Chart(ctx, {
             type: "radar",
@@ -73,6 +84,43 @@
             error
           );
         });
+
+      // 업적 선택 시 해당 업적의 내용 로드
+      function loadAchievementContent() {
+        var selectElement = document.getElementById("achievementSelect");
+        var selectedTitle = selectElement.value;
+
+        // JSON 데이터를 비동기적으로 가져오기
+        fetch("../data/data.json")
+          .then((response) => response.json())
+          .then((jsonData) => {
+            // 선택된 업적에 해당하는 데이터 찾기
+            var selectedAchievement = jsonData.AchievementsList.find(
+              (achievement) => achievement.title === selectedTitle
+            );
+
+            // 선택된 업적의 제목과 내용 표시
+            var titleElement = document.getElementById("achievementTitle");
+            var contentElement = document.getElementById("achievementContent");
+            var screenshotElement = document.getElementById("screenshot");
+
+            titleElement.textContent = selectedAchievement.title;
+            contentElement.textContent = selectedAchievement.content;
+            screenshotElement.src = selectedAchievement.screenshot;
+
+            // 레이더 차트 데이터 업데이트
+            var radarChart = Chart.instances[0];
+            radarChart.data.labels = selectedAchievement.labels;
+            radarChart.data.datasets[0].data = selectedAchievement.data;
+            radarChart.update();
+          })
+          .catch((error) => {
+            console.error(
+              "JSON 데이터를 가져오는 동안 오류가 발생했습니다:",
+              error
+            );
+          });
+      }
     </script>
   </body>
 </html>

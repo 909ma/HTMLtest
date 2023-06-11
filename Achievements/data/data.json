@@ -1,7 +1,24 @@
 {
-  "title": "분석 결과",
-  "content": "<p>이것은 분석 결과에 대한 본문 내용입니다. JSON 파일에 HTML 형식으로 저장됩니다.</p>",
-  "screenshot": "screenshot.jpg",
-  "labels": ["라벨 1", "라벨 2", "라벨 3", "라벨 4", "라벨 5"],
-  "data": [3, 2, 5, 4, 1]
+  "chartData": {
+    "beginAtZero": "true",
+    "min": 0,
+    "max": 5,
+    "stepSize": 1
+  },
+  "AchievementsList": [
+    {
+      "title": "8비트레이드",
+      "content": "8비트 레이드에 대한 내용입니다.",
+      "screenshot": "screenshot1.jpg",
+      "labels": ["라벨 1", "라벨 2", "라벨 3", "라벨 4", "라벨 5"],
+      "data": [5, 5, 5, 5, 5]
+    },
+    {
+      "title": "GTFO",
+      "content": "GTFO에 대한 내용입니다.",
+      "screenshot": "screenshot2.jpg",
+      "labels": ["라벨 1", "라벨 2", "라벨 3", "라벨 4", "라벨 5"],
+      "data": [3, 3, 3, 3, 3]
+    }
+  ]
 }
