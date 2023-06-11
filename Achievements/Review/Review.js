@@ -65,21 +65,46 @@ fetch("../data/data.json")
       // 선택된 업적의 제목과 내용 표시
       var titleElement = document.getElementById("achievementTitle");
       var contentElement = document.getElementById("achievementContent");
-      var screenshotElement = document.getElementById("screenshot");
 
       titleElement.textContent = selectedAchievement.title;
-      contentElement.innerHTML = ""; // 기존 내용 초기화
+      contentElement.innerHTML = ""; // 내용 초기화
 
-      // 선택된 업적의 내용 순회
-      selectedAchievement.content.forEach((content) => {
-        if (content.type === "text") {
-          var textElement = document.createElement("p");
-          textElement.textContent = content.value;
-          contentElement.appendChild(textElement);
-        } else if (content.type === "image") {
-          var imageElement = document.createElement("img");
-          imageElement.src = "./Screenshot/" + content.value;
-          contentElement.appendChild(imageElement);
+      // content 배열의 각 항목을 처리
+      selectedAchievement.content.forEach((item) => {
+        if (item.type === "text") {
+          // 텍스트 항목인 경우
+          var textNode = document.createTextNode(item.value);
+          contentElement.appendChild(textNode);
+        } else if (item.type === "image") {
+          // 이미지 항목인 경우
+          var imageContainer = document.createElement("div");
+          imageContainer.className = "image-container";
+
+          var image = new Image();
+          image.onload = function () {
+            var canvas = document.createElement("canvas");
+            var ctx = canvas.getContext("2d");
+
+            // 이미지 크기를 1024px로 조정
+            var width = 1024;
+            var height = (width / this.width) * this.height;
+            canvas.width = width;
+            canvas.height = height;
+
+            // 조정된 크기로 이미지 그리기
+            ctx.drawImage(this, 0, 0, width, height);
+
+            // 이미지를 data URL로 변환하여 img 요소 생성
+            var imageElement = new Image();
+            imageElement.src = canvas.toDataURL();
+            imageContainer.appendChild(imageElement);
+
+            // canvas 요소 삭제 (optional)
+            canvas.remove();
+          };
+          image.src = "./Screenshot/" + item.value;
+
+          contentElement.appendChild(imageContainer);
         }
       });
 
