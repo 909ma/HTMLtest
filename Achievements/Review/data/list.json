@@ -1,0 +1,16 @@
+{
+  "chartData": {
+    "beginAtZero": true,
+    "min": 0,
+    "max": 10,
+    "stepSize": 1
+  },
+  "reviewList": [
+    {
+      "title": "test"
+    },
+    {
+      "title": "딥 락 갤럭틱(Deep Rock Galactic)"
+    }
+  ]
+}
