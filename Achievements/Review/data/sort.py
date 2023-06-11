@@ -8,7 +8,7 @@ with open('list.json', encoding='utf-8') as file:
 data = json.loads(json_data)
 
 # reviewList를 제목(title)을 기준으로 오름차순 정렬
-sorted_list = sorted(data["reviewList"], key=lambda x: x["title"])
+sorted_list = sorted(data, key=lambda x: x["title"])
 
 # 정렬된 결과를 list.json 파일에 저장
 with open('list.json', 'w', encoding='utf-8') as file:
