@@ -43,11 +43,22 @@ h2 {
   font-size: 32px;
 }
 
+#hiContent {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 /* 스크린샷 이미지 스타일 */
-#screenshot {
+#screenshot-container {
   max-width: 1024px;
   margin: 0 auto 20px; /* 수평 가운데 정렬 */
-  display: block; /* 블록 요소로 설정하여 수평 가운데 정렬 적용 */
+  display: flex;
+  justify-content: center;
+}
+
+#screenshot-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* 레이더 차트 컨테이너 스타일 */
