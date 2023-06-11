@@ -5,7 +5,7 @@ fetch("../data/data.json")
     var selectElement = document.getElementById("achievementSelect");
 
     // 선택 가능한 옵션 추가
-    jsonData.AchievementsList.forEach((achievement) => {
+    jsonData.achievementsList.forEach((achievement) => {
       var option = document.createElement("option");
       option.value = achievement.title;
       option.text = achievement.title;
@@ -17,10 +17,10 @@ fetch("../data/data.json")
     var radarOptions = {
       scale: {
         ticks: {
-          beginAtZero: chartData.beginAtZero === "true",
-          min: Number(chartData.min),
-          max: Number(chartData.max),
-          stepSize: Number(chartData.stepSize),
+          beginAtZero: chartData.beginAtZero,
+          min: chartData.min,
+          max: chartData.max,
+          stepSize: chartData.stepSize,
           fontSize: 24, // 원하는 폰트 크기로 설정 (예: 60) 스텝 크기
         },
         pointLabels: {
@@ -67,7 +67,7 @@ function loadAchievementContent() {
     .then((response) => response.json())
     .then((jsonData) => {
       // 선택된 업적에 해당하는 데이터 찾기
-      var selectedAchievement = jsonData.AchievementsList.find(
+      var selectedAchievement = jsonData.achievementsList.find(
         (achievement) => achievement.title === selectedTitle
       );
 
@@ -82,8 +82,8 @@ function loadAchievementContent() {
 
       // 레이더 차트 데이터 업데이트
       var radarChart = Chart.instances[0];
-      radarChart.data.labels = selectedAchievement.labels;
-      radarChart.data.datasets[0].data = selectedAchievement.data;
+      radarChart.data.labels = selectedAchievement.labels.map((label) => label.name);
+      radarChart.data.datasets[0].data = selectedAchievement.labels.map((label) => label.value);
       radarChart.update();
     })
     .catch((error) => {
