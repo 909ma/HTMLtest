@@ -8,8 +8,13 @@
   "achievementsList": [
     {
       "title": "딥락갤럭틱",
-      "content": "딥다이브 성공입니다. 스카웃으로만 합니다. 전투형 스카웃입니다.",
-      "screenshot": "딥락갤럭틱.jpg",
+      "content": [
+        {
+          "type": "text",
+          "value": "딥다이브 성공입니다. 스카웃으로만 합니다. 전투형 스카웃입니다."
+        },
+        { "type": "image", "value": "딥락갤럭틱.jpg" }
+      ],
       "labels": [
         { "name": "그래픽", "value": 4 },
         { "name": "게임플레이", "value": 4 },
@@ -25,8 +30,11 @@
     },
     {
       "title": "Test",
-      "content": "테스트용입니다.",
-      "screenshot": "테스트1.jpg",
+      "content": [
+        { "type": "text", "value": "테스트용입니다." },
+        { "type": "image", "value": "테스트1.jpg" },
+        { "type": "text", "value": "테스트용입니다.2" }
+      ],
       "labels": [
         { "name": "그래픽", "value": 3 },
         { "name": "게임플레이", "value": 3 },
