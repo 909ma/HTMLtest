@@ -1900,7 +1900,7 @@
     "answer": "Answer 1 : 단위 모듈 테스트"
   },
   {
-    "question": "Question 476.\n구현된 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지를 확인하기 위한 테스트 항목에 대한 명세서를 의미하는 것은?\n  ① ○○○를 이용하지 않은 테스트는 특정 요소에 대한 검증이 누락되거나 불필요한 검증의 반복으로 인해 인력과 시간을 낭비할 수 있다.\n  ② ISO/IEC/IEEE 29119- 3 표준에 따른 ○○○의 구성 요소\n    ⑴ 식별자(Identifier) : 항목 식별자, 일련번호\n    ⑵ 테스트 항목(Test Item) : 테스트 대상(모듈 또는 기능)\n    ⑶ 입력 명세(Input Specification) : 입력 데이터 또는 테스트 조건\n    ⑷ 출력 명세(Output Specification) : ○○○ 수행 시 예상되는 출력 결과\n환경 설정(Environmental Needs) : 필요한 하드웨어나 소프트웨어의 환경\n    ⑸ 특수 절차 요구(Special Procedure Requirment) : ○○○ 수행 시 특별히 요구되는 절차\n    ⑹ 의존성 기술(Inter-case DEpendencies) : ○○○ 간의 의존성",
+    "question": "Question 476.\n구현된 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지를 확인하기 위한 테스트 항목에 대한 명세서를 의미하는 것은?\n  ① ○○○를 이용하지 않은 테스트는 특정 요소에 대한 검증이 누락되거나 불필요한 검증의 반복으로 인해 인력과 시간을 낭비할 수 있다.\n  ② ISO/IEC/IEEE 29119- 3 표준에 따른 ○○○의 구성 요소\n    ⑴ 식별자(Identifier) : 항목 식별자, 일련번호\n    ⑵ 테스트 항목(Test Item) : 테스트 대상(모듈 또는 기능)\n    ⑶ 입력 명세(Input Specification) : 입력 데이터 또는 테스트 조건\n    ⑷ 출력 명세(Output Specification) : ○○○ 수행 시 예상되는 출력 결과\n    ⑸ 환경 설정(Environmental Needs) : 필요한 하드웨어나 소프트웨어의 환경\n    ⑹ 특수 절차 요구(Special Procedure Requirment) : ○○○ 수행 시 특별히 요구되는 절차\n    ⑺ 의존성 기술(Inter-case DEpendencies) : ○○○ 간의 의존성",
     "answer": "Answer 1 : 테스트 케이스\nAnswer 2 : Test Case"
   },
   {
