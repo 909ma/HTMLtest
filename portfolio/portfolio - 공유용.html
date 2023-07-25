@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>포트폴리오</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 20px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: #333;
+        margin: 0;
+      }
+
+      .navbar {
+        display: flex;
+      }
+
+      .navbar a {
+        display: block;
+        padding: 10px;
+        margin-right: 10px;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .project {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      .project img {
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+        margin-right: 20px;
+        float: left;
+      }
+
+      .project h2 {
+        color: #333;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+
+      .project .summary {
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .project .address {
+        color: #007bff;
+        margin-bottom: 5px;
+      }
+
+      .project .date {
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .project .language {
+        color: #555;
+        margin-bottom: 5px;
+      }
+
+      .project .environment {
+        color: #555;
+        margin-bottom: 5px;
+      }
+
+      .filter-buttons {
+        margin-bottom: 20px;
+      }
+
+      .filter-buttons button {
+        padding: 6px 12px;
+        margin-right: 10px;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      .filter-buttons button.active {
+        background-color: #333;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>포트폴리오</h1>
+      <nav class="navbar">
+        <a href="#">홈</a>
+        <a href="#">프로젝트</a>
+        <a href="#">이력</a>
+        <a href="#">연락</a>
+      </nav>
+    </header>
+
+    <div class="filter-buttons">
+      <button class="filter-button active" data-language="all">전체</button>
+      <button class="filter-button" data-language="python">Python</button>
+      <button class="filter-button" data-language="javascript">
+        JavaScript
+      </button>
+      <button class="filter-button" data-language="java">Java</button>
+    </div>
+
+    <div class="project" data-language="python">
+      <img src="project1.jpg" alt="프로젝트 1" />
+      <div>
+        <h2>프로젝트 1</h2>
+        <p class="summary">프로젝트 1에 대한 간단한 요약</p>
+        <p class="address">프로젝트 1 주소: <a href="주소1">주소1</a></p>
+        <p class="date">만든 날짜: 2023년 7월 11일</p>
+        <p class="language">사용 언어: Python</p>
+        <p class="environment">개발 환경: Visual Studio Code</p>
+      </div>
+    </div>
+
+    <div class="project" data-language="javascript">
+      <img src="project2.jpg" alt="프로젝트 2" />
+      <div>
+        <h2>프로젝트 2</h2>
+        <p class="summary">프로젝트 2에 대한 간단한 요약</p>
+        <p class="address">프로젝트 2 주소: <a href="주소2">주소2</a></p>
+        <p class="date">만든 날짜: 2023년 7월 12일</p>
+        <p class="language">사용 언어: JavaScript</p>
+        <p class="environment">개발 환경: Visual Studio Code</p>
+      </div>
+    </div>
+
+    <div class="project" data-language="java">
+      <img src="project3.jpg" alt="프로젝트 3" />
+      <div>
+        <h2>프로젝트 3</h2>
+        <p class="summary">프로젝트 3에 대한 간단한 요약</p>
+        <p class="address">프로젝트 3 주소: <a href="주소3">주소3</a></p>
+        <p class="date">만든 날짜: 2023년 7월 13일</p>
+        <p class="language">사용 언어: Java</p>
+        <p class="environment">개발 환경: Eclipse</p>
+      </div>
+    </div>
+
+    <!-- 추가 프로젝트들을 위한 div 요소 복사 및 수정 -->
+
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-button");
+      const projects = document.querySelectorAll(".project");
+
+      // 필터 버튼 클릭 시 이벤트 처리
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const language = this.getAttribute("data-language");
+
+          // 모든 프로젝트 애니메이션 제거 후 숨기기
+          projects.forEach((project) => {
+            project.style.animation = "";
+            project.style.display = "none";
+          });
+
+          // 선택한 언어에 해당하는 프로젝트 표시
+          if (language === "all") {
+            projects.forEach((project) => {
+              project.style.animation = "fadeIn 0.5s ease-in-out";
+              project.style.display = "block";
+            });
+          } else {
+            const filteredProjects = document.querySelectorAll(
+              `.project[data-language="${language}"]`
+            );
+            filteredProjects.forEach((project) => {
+              project.style.animation = "fadeIn 0.5s ease-in-out";
+              project.style.display = "block";
+            });
+          }
+
+          // 선택한 필터 버튼 활성화
+          filterButtons.forEach((button) => {
+            button.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
