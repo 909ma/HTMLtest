@@ -1,0 +1,66 @@
+[
+  {
+    "ServerName": "실리안",
+    "CharacterName": "오지마노스렌드에",
+    "CharacterLevel": 60,
+    "CharacterClassName": "서머너",
+    "ItemAvgLevel": "1,492.50",
+    "ItemMaxLevel": "1,492.50"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "어서와요노스렌드에",
+    "CharacterLevel": 59,
+    "CharacterClassName": "소서리스",
+    "ItemAvgLevel": "1,475.00",
+    "ItemMaxLevel": "1,475.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "검은석탄은모닥불에",
+    "CharacterLevel": 59,
+    "CharacterClassName": "홀리나이트",
+    "ItemAvgLevel": "1,445.00",
+    "ItemMaxLevel": "1,445.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "목숨을노스렌드에",
+    "CharacterLevel": 56,
+    "CharacterClassName": "블레이드",
+    "ItemAvgLevel": "1,360.00",
+    "ItemMaxLevel": "1,360.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "고양이를노스렌드에",
+    "CharacterLevel": 56,
+    "CharacterClassName": "인파이터",
+    "ItemAvgLevel": "1,355.83",
+    "ItemMaxLevel": "1,355.83"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "돌아온노스렌드에",
+    "CharacterLevel": 56,
+    "CharacterClassName": "워로드",
+    "ItemAvgLevel": "1,355.00",
+    "ItemMaxLevel": "1,355.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "달리는노스렌드",
+    "CharacterLevel": 56,
+    "CharacterClassName": "데빌헌터",
+    "ItemAvgLevel": "1,340.00",
+    "ItemMaxLevel": "1,340.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "가지마노스렌드에",
+    "CharacterLevel": 56,
+    "CharacterClassName": "스카우터",
+    "ItemAvgLevel": "1,340.00",
+    "ItemMaxLevel": "1,340.00"
+  }
+]

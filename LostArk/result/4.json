@@ -1,0 +1,90 @@
+[
+  {
+    "ServerName": "실리안",
+    "CharacterName": "눈속의스타",
+    "CharacterLevel": 60,
+    "CharacterClassName": "건슬링어",
+    "ItemAvgLevel": "1,580.00",
+    "ItemMaxLevel": "1,580.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "갈망하는도화가",
+    "CharacterLevel": 60,
+    "CharacterClassName": "도화가",
+    "ItemAvgLevel": "1,520.00",
+    "ItemMaxLevel": "1,520.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "실장검법참피",
+    "CharacterLevel": 60,
+    "CharacterClassName": "블레이드",
+    "ItemAvgLevel": "1,500.83",
+    "ItemMaxLevel": "1,500.83"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "이거사실은장난감대검이야",
+    "CharacterLevel": 55,
+    "CharacterClassName": "슬레이어",
+    "ItemAvgLevel": "1,490.00",
+    "ItemMaxLevel": "1,490.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "집에서키우는애완데런",
+    "CharacterLevel": 59,
+    "CharacterClassName": "데모닉",
+    "ItemAvgLevel": "1,485.00",
+    "ItemMaxLevel": "1,485.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "진심을다하지않으면",
+    "CharacterLevel": 58,
+    "CharacterClassName": "기상술사",
+    "ItemAvgLevel": "1,457.50",
+    "ItemMaxLevel": "1,457.50"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "눈속의하트",
+    "CharacterLevel": 60,
+    "CharacterClassName": "바드",
+    "ItemAvgLevel": "1,445.00",
+    "ItemMaxLevel": "1,445.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "어서가요쿵덕쿵아일랜드",
+    "CharacterLevel": 60,
+    "CharacterClassName": "디스트로이어",
+    "ItemAvgLevel": "1,415.00",
+    "ItemMaxLevel": "1,415.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "아르만딘",
+    "CharacterLevel": 59,
+    "CharacterClassName": "아르카나",
+    "ItemAvgLevel": "1,345.00",
+    "ItemMaxLevel": "1,345.00"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "SSS급중화기",
+    "CharacterLevel": 60,
+    "CharacterClassName": "블래스터",
+    "ItemAvgLevel": "1,341.67",
+    "ItemMaxLevel": "1,341.67"
+  },
+  {
+    "ServerName": "실리안",
+    "CharacterName": "무극배틀마스터",
+    "CharacterLevel": 59,
+    "CharacterClassName": "배틀마스터",
+    "ItemAvgLevel": "1,340.00",
+    "ItemMaxLevel": "1,340.00"
+  }
+]

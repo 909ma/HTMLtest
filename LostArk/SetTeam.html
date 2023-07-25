@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>공대 구성</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #000000;
+      }
+      .draggable {
+        position: absolute;
+        cursor: grab;
+      }
+      img {
+        width: 200px;
+      }
+    </style>
+    <!-- jquery-ui 라이브러리 추가 -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <!-- 드래그 가능한 이미지를 여기에 추가 -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jquery-ui 라이브러리 추가 -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      // 페이지 로드 시 실행될 함수
+      $(document).ready(function () {
+        makeDraggable();
+      });
+
+      function makeDraggable() {
+        $(".draggable").draggable({
+          stop: function () {
+            $(this).css("cursor", "default");
+          },
+        });
+      }
+
+      // 새로운 이미지 추가 함수
+      function addImage(src) {
+        const img = new Image();
+        img.src = src;
+        img.className = "draggable";
+
+        // 이미지의 초기 위치를 화면 하단에 설정
+        img.style.left = "50%";
+        img.style.bottom = "10px";
+
+        $("#container").append(img);
+        makeDraggable();
+      }
+
+      const imageCount = 47;
+      for (let i = imageCount; i >= 0; i--) {
+        const imagePath = "images/cell_" + i + ".png";
+        addImage(imagePath);
+      }
+    </script>
+  </body>
+</html>

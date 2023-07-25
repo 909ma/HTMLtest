@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>명찰 만들기</title>
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        margin: auto;
+        table-layout: fixed;
+      }
+      th,
+      td {
+        width: auto;
+        white-space: nowrap;
+      }
+      td {
+        width: 200px;
+      }
+      th:nth-child(1),
+      td:nth-child(1) {
+        background-color: #ffe8ff;
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        background-color: #dfffcf;
+      }
+
+      th:nth-child(3),
+      td:nth-child(3) {
+        background-color: #cfcfff;
+      }
+
+      th:nth-child(4),
+      td:nth-child(4) {
+        background-color: #cfffff;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- 화면 캡쳐 CDN -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  </head>
+  <body>
+    <div id="capture" style="display: inline-block">
+      <table id="characterTable" border="1"></table>
+    </div>
+    <br />
+    <button id="cellCapBtn">셀 캡쳐</button>
+    <button id="fullCapBtn">전체 캡쳐</button>
+
+    <script>
+      const fileList = ["1", "2", "3", "4"];
+
+      function displayData(tableData) {
+        const table = document.getElementById("characterTable");
+
+        const headerRow = document.createElement("tr");
+        for (const fileName of fileList) {
+          const th = document.createElement("th");
+          th.textContent = fileName;
+          headerRow.appendChild(th);
+        }
+        table.appendChild(headerRow);
+
+        const maxDataCount = Math.max(
+          ...Object.values(tableData).map((data) => data.length)
+        );
+        for (let i = 0; i < maxDataCount; i++) {
+          const dataRow = document.createElement("tr");
+          for (const fileName of fileList) {
+            const td = document.createElement("td");
+            const rowData = tableData[fileName][i];
+            if (rowData) {
+              const rowDataArr = rowData.split(" / ");
+              for (const data of rowDataArr) {
+                const span = document.createElement("span");
+                span.textContent = data;
+                td.appendChild(span);
+                td.appendChild(document.createElement("br"));
+              }
+            }
+            dataRow.appendChild(td);
+          }
+          table.appendChild(dataRow);
+        }
+      }
+
+      async function loadJSONFiles() {
+        try {
+          const tableData = {};
+
+          for (const fileName of fileList) {
+            const response = await fetch(`result/${fileName}.json`); // 파일 경로 수정
+            const data = await response.json();
+            const rowData = data.map(
+              (item) =>
+                `${item.CharacterName} / ${item.CharacterClassName} / ${item.ItemMaxLevel}`
+            );
+            tableData[fileName] = rowData;
+          }
+
+          displayData(tableData);
+        } catch (error) {
+          console.error("Error fetching JSON files:", error);
+        }
+      }
+
+      // 테이블 이미지로 저장
+      $(function () {
+        $("#cellCapBtn").on("click", function () {
+          const table = document.getElementById("characterTable");
+          const rows = table.querySelectorAll("tr");
+          const capturedImages = [];
+
+          function captureCell(cell) {
+            return new Promise((resolve) => {
+              html2canvas(cell).then((canvas) => {
+                capturedImages.push(canvas.toDataURL("image/png"));
+                resolve();
+              });
+            });
+          }
+
+          const promises = [];
+          rows.forEach((row) => {
+            const cells = row.querySelectorAll("td");
+            cells.forEach((cell) => {
+              promises.push(captureCell(cell));
+            });
+          });
+
+          // 모든 캡쳐가 완료되면 zip 파일 생성
+          Promise.all(promises).then(() => {
+            const zip = new JSZip();
+            const imgFolder = zip.folder("images");
+            capturedImages.forEach((img, index) => {
+              const imgData = img.split(",")[1];
+              imgFolder.file(`cell_${index}.png`, imgData, { base64: true });
+            });
+            zip.generateAsync({ type: "blob" }).then(function (content) {
+              saveAs(content, "captured_cells.zip");
+            });
+          });
+        });
+
+        // 전체 캡쳐 버튼 클릭 이벤트
+        $("#fullCapBtn").on("click", function () {
+          html2canvas(document.querySelector("#capture")).then((canvas) => {
+            saveImg(canvas.toDataURL("image/png"), "captured_table.png");
+          });
+        });
+
+        function saveImg(uri, filename) {
+          var link = document.createElement("a");
+          if (typeof link.download === "string") {
+            link.href = uri;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          } else {
+            window.open(uri);
+          }
+        }
+      });
+
+      // 페이지 로드 시 JSON 파일 불러오기
+      window.onload = loadJSONFiles;
+    </script>
+  </body>
+</html>
