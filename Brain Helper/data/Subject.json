@@ -1,18 +1,18 @@
 [
-    {
-      "name": "정보처리기사 실기 요약",
-      "value": "EngineerInformationProcessing"
-    },
-    {
-      "name": "테스트1",
-      "value": "test1"
-    },
-    {
-      "name": "테스트2",
-      "value": "test2"
-    },
-    {
-      "name": "테스트3",
-      "value": "test3"
-    }
-  ]
+  {
+    "name": "정보처리기사 실기",
+    "value": "EngineerInformationProcessing"
+  },
+  {
+    "name": "CentOS 리눅스 구축관리실무",
+    "value": "CentOSLinux"
+  },
+  {
+    "name": "투자자산 운용사",
+    "value": "InvestmentManager"
+  },
+  {
+    "name": "테스트3",
+    "value": "test3"
+  }
+]
