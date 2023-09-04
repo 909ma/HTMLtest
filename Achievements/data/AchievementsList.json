@@ -1,10 +1,10 @@
 [
   {
-    "image name": "8비트레이드.gif",
-    "title": "8비트레이드",
-    "value": "8 Bit Raid 노말 난이도를 클리어했다!",
-    "now": 9,
-    "max": 9
+    "image name": "엘든링.webp",
+    "title": "엘든링",
+    "value": "Elden Ring을 깼다!",
+    "now": 132,
+    "max": 154
   },
   {
     "image name": "딥락갤럭틱.webp",
@@ -14,11 +14,11 @@
     "max": 100
   },
   {
-    "image name": "정처기.png",
-    "title": "정보처리기사",
-    "value": "정보처리기사를 취득했다!",
-    "now": 50,
-    "max": 100
+    "image name": "백준플레.svg",
+    "title": "백준",
+    "value": "백준 플래티넘5를 달성했다!",
+    "now": 837,
+    "max": 1600
   },
   {
     "image name": "리마1급.png",
@@ -35,11 +35,11 @@
     "max": 100
   },
   {
-    "image name": "백준플레.svg",
-    "title": "백준",
-    "value": "백준 플래티넘5를 달성했다!",
-    "now": 806,
-    "max": 1600
+    "image name": "정처기.png",
+    "title": "정보처리기사",
+    "value": "정보처리기사를 취득했다!",
+    "now": 100,
+    "max": 100
   },
   {
     "image name": "몬헌월드.webp",
@@ -68,13 +68,6 @@
     "value": "MONSTER HUNTER RISE: SUNBREAK의 마스터 랭크 999를 달성했다!",
     "now": 50,
     "max": 999
-  },
-  {
-    "image name": "엘든링.webp",
-    "title": "엘든링",
-    "value": "Elden Ring을 깼다!",
-    "now": 66.6,
-    "max": 100
   },
   {
     "image name": "테라리아.png",
@@ -110,6 +103,13 @@
     "value": "Factorio 로켓을 발사했다!",
     "now": 100,
     "max": 100
+  },
+  {
+    "image name": "8비트레이드.gif",
+    "title": "8비트레이드",
+    "value": "8 Bit Raid 노말 난이도를 클리어했다!",
+    "now": 9,
+    "max": 9
   },
   {
     "image name": "GTFO.png",
