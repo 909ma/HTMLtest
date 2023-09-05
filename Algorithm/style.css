@@ -1,9 +1,7 @@
-
-
 @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
 body {
-  font-family: 'D2Coding', monospace;
+  font-family: "D2Coding", monospace;
   background-color: #f7f7f7;
   margin: 0;
   padding: 20px;
@@ -34,7 +32,7 @@ h1 {
   text-decoration: none;
 }
 
-.project {
+.algorithm {
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -44,44 +42,42 @@ h1 {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-.project img {
+.algorithm img {
   width: 200px;
-  height: 200px;
+  height: 150px;
   border-radius: 5px;
   margin-right: 20px;
   float: left;
-  object-fit: contain;
-  background-color: #555;
 }
 
-.project h2 {
+.algorithm h2 {
   color: #333;
   margin: 0;
   margin-bottom: 5px;
 }
 
-.project .summary {
+.algorithm .summary {
   color: #666;
   margin-bottom: 10px;
 }
 
-.project .address {
+.algorithm .address {
   color: #007bff;
   margin-bottom: 5px;
 }
 
-.project .date {
+.algorithm .date {
   color: #999;
   font-size: 12px;
   margin-bottom: 5px;
 }
 
-.project .language {
+.algorithm .language {
   color: #555;
   margin-bottom: 5px;
 }
 
-.project .environment {
+.algorithm .environment {
   color: #555;
   margin-bottom: 5px;
 }
@@ -108,6 +104,7 @@ h1 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
