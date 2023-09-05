@@ -121,3 +121,62 @@ h1 {
   color: #333;
   text-decoration: none;
 }
+
+/* 뒤로 가기 버튼 스타일 설정 */
+.back-button {
+  padding: 6px 12px;
+  margin-left: 10px; /* margin-right 대신 margin-left로 수정하여 왼쪽 여백 추가 */
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  float: right; /* 우측으로 붙이기 */
+}
+/* 복사 버튼 호버 스타일 설정 */
+button.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* 맨 위로 돌아가기 버튼 스타일 설정 */
+.scroll-top-button {
+  padding: 6px 12px;
+  margin-left: 10px; /* margin-right 대신 margin-left로 수정하여 왼쪽 여백 추가 */
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  float: right; /* 우측으로 붙이기 */
+}
+/* 복사 버튼 호버 스타일 설정 */
+button.scroll-top-button:hover {
+  background-color: #0056b3;
+}
+
+/* 복사 버튼 스타일 설정 */
+button.copy-button {
+  padding: 6px 12px;
+  margin-right: 10px;
+
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  float: right; /* 우측으로 붙이기 */
+}
+
+/* 복사 버튼 호버 스타일 설정 */
+button.copy-button:hover {
+  background-color: #0056b3;
+}
+
+/* 코드 블록 스타일 설정 */
+pre {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow-x: auto;
+}
