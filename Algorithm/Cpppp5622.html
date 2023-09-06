@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>909MA 알고리즘 문제 풀이</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>알고리즘 문제 풀이</h1>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="https://github.com/909ma">GitHub</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
+                <a href="./main.html">Algorithm</a>
+            </nav>
+        </header>
+        <div class="filter-buttons"></div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div class="algorithm">
+            <h1>다이얼</h1>
+            <p><a href="https://www.acmicpc.net/problem/5622">문제 바로가기</a></p>
+            <hr>
+            <p>문제 설명: <br>상근이의 할머니는 아래 그림과 같이 오래된 다이얼 전화기를 사용한다.<br>
+            <img src="./img/5622.png" alt="5622"><br>
+            전화를 걸고 싶은 번호가 있다면, 숫자를 하나를 누른 다음에 금속 핀이 있는 곳 까지 시계방향으로 돌려야 한다. 숫자를 하나 누르면 다이얼이 처음 위치로 돌아가고, 다음 숫자를 누르려면 다이얼을 처음 위치에서 다시 돌려야 한다.<br>
+            
+            숫자 1을 걸려면 총 2초가 필요하다. 1보다 큰 수를 거는데 걸리는 시간은 이보다 더 걸리며, 한 칸 옆에 있는 숫자를 걸기 위해선 1초씩 더 걸린다.<br>
+            
+            상근이의 할머니는 전화 번호를 각 숫자에 해당하는 문자로 외운다. 즉, 어떤 단어를 걸 때, 각 알파벳에 해당하는 숫자를 걸면 된다. 예를 들어, UNUCIC는 868242와 같다.<br>
+            
+            할머니가 외운 단어가 주어졌을 때, 이 전화를 걸기 위해서 필요한 최소 시간을 구하는 프로그램을 작성하시오.</p>
+            <hr>
+            <p>문제 풀이:</p>
+            <p>DialTime() 함수를 만든 뒤 switch() 문을 통해 문제를 풀었습니다.</p>
+            <button class="copy-button" onclick="copyCode(1)">코드 복사하기</button>
+            <pre><code id="code1">using System;
+
+namespace MyCompiler {
+    class Program {
+        public static void Main(string[] args) {
+            string inputs = Console.ReadLine();
+            int inputs_length = inputs.Length;
+            int time = 0;
+            for (int i = 0; i < inputs_length; i++){
+                char char_temp = inputs[i];
+                int int_temp = Program.DialTime(char_temp);
+                time += int_temp;                
+            }
+            Console.Write($"{time}");
+        }
+        
+        public static int DialTime(char temp){
+            switch(temp){
+            case 'A':
+            case 'B':
+            case 'C':
+                return 3;
+            case 'D':
+            case 'E':
+            case 'F':
+                return 4;
+            case 'G':
+            case 'H':
+            case 'I':
+                return 5;
+            case 'J':
+            case 'K':
+            case 'L':
+                return 6;
+            case 'M':
+            case 'N':
+            case 'O':
+                return 7;
+            case 'P':
+            case 'Q':
+            case 'R':
+            case 'S':
+                return 8;
+            case 'T':
+            case 'U':
+            case 'V':
+                return 9;
+            case 'W':
+            case 'X':
+            case 'Y':
+            case 'Z':
+                return 10;
+            }
+            return 0;
+        }
+    }
+}</code></pre>
+            <br><br>
+            <p>저는 switch문을 사용하는 방법보다 더 좋은 방법을 생각해내지는 못했으나 좋은 풀이를 발견하여 공유합니다. <br><a href="https://www.acmicpc.net/source/65110282">풀이 출처</a></p>
+            <button class="copy-button" onclick="copyCode(2)">코드 복사하기</button>
+            <pre><code id="code2">string str = Console.ReadLine();
+string[] dial = { "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ" };
+
+int sum = 0;
+for(int i = 0; i < str.Length; i++)
+{
+    for(int j = 0; j < dial.Length; j++)
+    {
+        if (dial[j].Contains(str[i]))
+        {
+            sum += j + 3;
+        }
+    }
+}
+Console.WriteLine(sum);</code></pre>
+        </div>
+        <div class="container">
+            <button class="back-button" onclick="goBack()">뒤로 가기</button>
+            <a href="#"><button class="scroll-top-button">맨 위로 돌아가기</button></a>
+        </div>
+    </div>
+    </div>
+    <script src="question_script.js"></script>
+</body>
+
+</html>

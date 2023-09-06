@@ -43,13 +43,12 @@ h1 {
 }
 
 .algorithm img {
-  width: 200px;
-  height: 150px;
+  width: 20%;
+  height: 20%;
   border-radius: 5px;
-  margin-right: 20px;
-  float: left;
+  display: block;
+  margin: auto;
 }
-
 .algorithm h2 {
   color: #333;
   margin: 0;
@@ -114,6 +113,7 @@ h1 {
 .container {
   max-width: 1080px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* 게시글 제목 하이퍼링크 스타일 변경 */
@@ -148,23 +148,25 @@ button.back-button:hover {
   border: none;
   cursor: pointer;
   float: right; /* 우측으로 붙이기 */
+  margin-bottom: 100px;
 }
 /* 복사 버튼 호버 스타일 설정 */
 button.scroll-top-button:hover {
   background-color: #0056b3;
 }
 
-/* 복사 버튼 스타일 설정 */
 button.copy-button {
   padding: 6px 12px;
   margin-right: 10px;
-
   border-radius: 5px;
   background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
-  float: right; /* 우측으로 붙이기 */
+  position: absolute; /* 절대 위치 지정 */
+  margin-top: 3px;
+  right: 13px; /* 오른쪽으로 고정 */
+  z-index: 1;
 }
 
 /* 복사 버튼 호버 스타일 설정 */
@@ -174,6 +176,7 @@ button.copy-button:hover {
 
 /* 코드 블록 스타일 설정 */
 pre {
+  font-family: "D2Coding", monospace;
   background-color: #f9f9f9;
   padding: 10px;
   border: 1px solid #ddd;

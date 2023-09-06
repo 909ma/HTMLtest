@@ -22,31 +22,38 @@
         <div class="filter-buttons"></div>
 <!------------------------------------------------------------------------------------------------------------->
 <div class="algorithm">
-<h1>문제 풀이</h1>
-<p><a href="">문제 바로가기</a></p>
+<h1>그대로 출력하기</h1>
+<p><a href="https://www.acmicpc.net/problem/11718">문제 바로가기</a></p>
 <hr>
-<p>문제 설명: <br>테스트입니다.</p>
+<p>문제 설명: <br>입력 받은 대로 출력하는 프로그램을 작성하시오.</p>
 <hr>
 <p>문제 풀이:</p>
-<p>첫 번째 풀이 내용입니다.</p>
+<p>Console.ReadLine()을 통해 한 글자씩 입력을 받자말자 그대로 출력을 하여 입력 버퍼를 다 비울 때까지 무한 반복을 하였습니다.</p>
 <button class="copy-button" onclick="copyCode(1)">코드 복사하기</button>
-<pre><code id="code1">print("Hello World!")</code></pre>
+<pre><code id="code1">using System;
+
+namespace MyCompiler {
+    class Program {
+        public static void Main(string[] args) {
+            int inputChar;
+
+            while ((inputChar = Console.Read()) != -1) {
+                char character = (char)inputChar;
+                Console.Write(character);
+            }
+        }
+    }
+}</code></pre>
 <br><br>
-<p>저는 switch문을 사용하는 방법보다 더 좋은 방법을 생각해내지는 못했으나 좋은 풀이를 발견하여 공유합니다. <br><a href="https://www.acmicpc.net/source/65110282">풀이 출처</a></p>
+<p>저는 풀면서 while() 안에 선언과 동시에 조건을 입력하려고 했지만, while()은 선언을 지원하지 않아 외부 선언을 해야함을 알았습니다. <br>그렇게 고민한 풀이가 위의 풀이였으나 더 좋은 풀이를 발견하여 공유합니다.<br><a href="https://www.acmicpc.net/source/63154448">풀이 출처</a></p>
 <button class="copy-button" onclick="copyCode(2)">코드 복사하기</button>
-<pre><code id="code2">print("Hello World!!")
-print("Hello World!!")
-print("Hello World!!")
-print("Hello World!!")
-print("Hello World!!")
-print("Hello World!!")
-print("Hello World!!")</code></pre>
+<pre><code id="code2">Console.Write(Console.In.ReadToEnd());</code></pre>
+<p>Console.In.ReadToEnd()를 하면 입력 버퍼를 한번에 다 받아온다는걸 처음 알았습니다.</p>
 </div>
 <div class="container">
 <button class="back-button" onclick="goBack()">뒤로 가기</button>
 <a href="#"><button class="scroll-top-button">맨 위로 돌아가기</button></a>
 </div>
-<!------------------------------------------------------------------------------------------------------------->
     </div>
     </div>
     <script src="question_script.js"></script>

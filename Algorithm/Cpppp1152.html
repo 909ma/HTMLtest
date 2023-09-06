@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>909MA 알고리즘 문제 풀이</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>알고리즘 문제 풀이</h1>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="https://github.com/909ma">GitHub</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
+                <a href="./main.html">Algorithm</a>
+            </nav>
+        </header>
+        <div class="filter-buttons"></div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div class="algorithm">
+            <h1>백준 1552: 단어의 개수</h1>
+            <p><a href="https://www.acmicpc.net/problem/1152">문제 바로가기</a></p>
+            <hr>
+            <p>문제 설명:</p>
+            <p>영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까?<br>이를 구하는 프로그램을 작성하시오.<br>단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.</p>
+            <hr>
+            <p>문제 풀이:</p>
+            <p></p>
+            <p>문자열로 입력을 받아 Trim()을 통해 앞뒤 공백을 없애주고 Split()을 통해 리스트형 자료구조로 변환해주었습니다.<br>이런 경우, " "과 같이 공백 하나로 입력이 들어오는 경우 Trim()으로 걸리지지 않기 때문에 예외처리를 했습니다.</p>
+            <button class="copy-button" onclick="copyCode(1)">코드 복사하기</button>
+            <pre><code id="code1">using System;
+
+namespace MyCompiler {
+    class Program {
+        public static void Main(string[] args) {
+            string[] inputs = Console.ReadLine().Trim().Split(' ');
+            int inputs_length = inputs.Length;
+            // 공백 하나만 들어오는 경우 예외처리
+            if (inputs_length == 1){
+                if (inputs[0] == ""){
+                    inputs_length = 0;
+                }
+            }
+            Console.Write(inputs_length);
+        }
+    }
+}</code></pre>
+            <p>문제를 풀면서 C#은 Strip()이 없고 Trim()을 쓸 수 있음을 알았네요. 또한 공백 하나 들어오는 경우도 생각해야했음을 느꼈습니다.</p>
+            <br><br>
+            <p>아래는 배울 점이 있는 코드라 가져왔습니다.<br><a href="https://www.acmicpc.net/source/64367532">풀이 출처</a></p>
+            
+            <button class="copy-button" onclick="copyCode(2)">코드 복사하기</button>  
+            <pre><code id="code2">Console.Write(Console.ReadLine().Split().Count(s=>s!=""));</code></pre>
+
+        </div>
+        <div class="container">
+            <button class="back-button" onclick="goBack()">뒤로 가기</button>
+            <a href="#"><button class="scroll-top-button">맨 위로 돌아가기</button></a>
+        </div>
+    </div>
+    </div>
+    <script src="question_script.js"></script>
+</body>
+
+</html>
