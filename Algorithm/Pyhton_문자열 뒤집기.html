@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>909MA 알고리즘 문제 풀이</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>알고리즘 문제 풀이</h1>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="https://github.com/909ma">GitHub</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
+                <a href="./main.html">Algorithm</a>
+            </nav>
+        </header>
+        <div class="filter-buttons"></div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div class="algorithm">
+            <h1>문자열 뒤집기</h1>
+            <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181905">문제 바로가기</a></p>
+            <hr>
+            <p>문제 설명: <br>문자열 my_string과 정수 s, e가 매개변수로 주어질 때, my_string에서 인덱스 s부터 인덱스 e까지를 뒤집은 문자열을 return 하는 solution
+                함수를 작성해 주세요.</p>
+            <hr>
+            <p>문제 풀이:</p>
+            <p>간단한 인덱스 및 슬라이싱 문제입니다.</p>
+            <button class="copy-button" onclick="copyCode(1)">코드 복사하기</button>
+            <pre><code id="code1">def solution(my_string, s, e):
+    answer = my_string[:s] + my_string[s : e + 1][::-1] + my_string[e + 1 :]
+    return answer</code></pre>
+            <br><br>
+            <p>처음에는 아래와 같이 바로 인덱스를 뒤집었으나, 이렇게 하니 리턴값이 None으로 잡혀 오답이 되었습니다.<br>바로 되는 것이 아님을 알았습니다. <br>
+            <pre><code id="code2">def solution(my_string, s, e):
+    answer = my_string[:s] + my_string[s:e+1:-1] + my_string[e+1:]
+    return answer</code></pre>
+        </div>
+        <div class="container">
+            <button class="back-button" onclick="goBack()">뒤로 가기</button>
+            <a href="#"><button class="scroll-top-button">맨 위로 돌아가기</button></a>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+    </div>
+    </div>
+    <script src="question_script.js"></script>
+</body>
+
+</html>
