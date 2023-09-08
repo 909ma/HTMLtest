@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>909MA 알고리즘 문제 풀이</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>알고리즘 문제 풀이</h1>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="https://github.com/909ma">GitHub</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
+                <a href="./main.html">Algorithm</a>
+            </nav>
+        </header>
+        <div class="filter-buttons"></div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div class="algorithm">
+            <h1>그림 확대</h1>
+            <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181836">문제 바로가기</a></p>
+            <hr>
+            <p>문제 설명: <br>
+                직사각형 형태의 그림 파일이 있고, 이 그림 파일은 1 × 1 크기의 정사각형 크기의 픽셀로 이루어져 있습니다.
+                <br>
+                이 그림 파일을 나타낸 문자열 배열 picture과 정수 k가 매개변수로 주어질 때, 이 그림 파일을 가로 세로로 k배 늘린 그림 파일을 나타내도록 문자열 배열을 return 하는
+                solution 함수를 작성해 주세요.
+            </p>
+            <hr>
+            <p>문제 풀이:</p>
+            <p>문제를 무식하게 풀었습니다.</p>
+            <button class="copy-button" onclick="copyCode(1)">코드 복사하기</button>
+            <pre><code id="code1">def solution(picture, k):
+    answer = []
+    for item in picture:
+        temp = ""
+        for i in range(len(item)):
+            for _ in range(k):
+                temp += item[i]
+        for _ in range(k):
+            answer.append(temp)
+    return answer
+
+
+# 테스트 케이스
+print(solution([".xx...xx.", "x..x.x..x", "x...x...x", ".x.....x.", "..x...x..", "...x.x...", "....x...."], 2))
+print(solution(["x.x", ".x.", "x.x"], 3))</code></pre>
+            <br><br>
+            <p>좋은 풀이를 발견하여 여기에 올립니다.<br></p>
+            <button class="copy-button" onclick="copyCode(2)">코드 복사하기</button>
+            <pre><code id="code2">def solution(picture, k):
+    answer = []
+    for i in range(len(picture)):
+        for _ in range(k):
+            answer.append(picture[i].replace('.', '.' * k).replace('x', 'x' * k))
+    return answer</code></pre>
+        </div>
+        <div class="container">
+            <button class="back-button" onclick="goBack()">뒤로 가기</button>
+            <a href="#"><button class="scroll-top-button">맨 위로 돌아가기</button></a>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+    </div>
+    </div>
+    <script src="question_script.js"></script>
+</body>
+
+</html>

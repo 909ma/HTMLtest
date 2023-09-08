@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>909MA 알고리즘 문제 풀이</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>알고리즘 문제 풀이</h1>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="https://github.com/909ma">GitHub</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
+                <a href="./main.html">Algorithm</a>
+            </nav>
+        </header>
+        <div class="filter-buttons"></div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div class="algorithm">
+            <h1>가까운 1 찾기</h1>
+            <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181898">문제 바로가기</a></p>
+            <hr>
+            <p>문제 설명: <br>정수 배열 arr가 주어집니다. 이때 arr의 원소는 1 또는 0입니다. 정수 idx가 주어졌을 때, idx보다 크면서 배열의 값이 1인 가장 작은 인덱스를 찾아서
+                반환하는 solution 함수를 완성해 주세요.
+
+                단, 만약 그러한 인덱스가 없다면 -1을 반환합니다.</p>
+            <hr>
+            <p>문제 풀이:</p>
+            <p>.index()를 알지 못하여 직접 알고리즘을 구현하였습니다.</p>
+            <button class="copy-button" onclick="copyCode(1)">코드 복사하기</button>
+            <pre><code id="code1">def solution(arr, idx):
+    answer = -1
+    for i in range(len(arr)):
+        if i < idx:
+            pass
+        else:
+            if arr[i] == 1:
+                answer = i
+                return answer
+    return answer</code></pre>
+            <br><br>
+            <p>아래는 .index()를 사용한 다른 사람의 풀이입니다.<br></p>
+            <button class="copy-button" onclick="copyCode(2)">코드 복사하기</button>
+            <pre><code id="code2">def solution(arr, idx):
+    answer = 0
+    try:
+        answer = arr.index(1, idx)
+    except:
+        answer = -1
+
+    return answer</code></pre>
+        </div>
+        <div class="container">
+            <button class="back-button" onclick="goBack()">뒤로 가기</button>
+            <a href="#"><button class="scroll-top-button">맨 위로 돌아가기</button></a>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+    </div>
+    </div>
+    <script src="question_script.js"></script>
+</body>
+
+</html>

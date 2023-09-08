@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>909MA 알고리즘 문제 풀이</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>알고리즘 문제 풀이</h1>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="https://github.com/909ma">GitHub</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
+                <a href="./main.html">Algorithm</a>
+            </nav>
+        </header>
+        <div class="filter-buttons"></div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div class="algorithm">
+            <h1>0 떼기</h1>
+            <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181847">문제 바로가기</a></p>
+            <hr>
+            <p>문제 설명: <br>정수로 이루어진 문자열 n_str이 주어질 때, n_str의 가장 왼쪽에 처음으로 등장하는 0들을 뗀 문자열을 return하도록 solution 함수를 완성해주세요.
+            </p>
+            <hr>
+            <p>문제 풀이:</p>
+            <p>자료형태를 변경하여 문제를 풀었습니다.</p>
+            <button class="copy-button" onclick="copyCode(1)">코드 복사하기</button>
+            <pre><code id="code1">def solution(n_str):
+    answer = str(int(n_str))
+    return answer</code></pre>
+            <br><br>
+            <p>제 코드는 숫자가 아닌 경우 0을 뗄 수 없다는게 문제입니다. 이런 경우 쓸 수 있는 lstrip()이 있습니다.<br></p>
+            <button class="copy-button" onclick="copyCode(2)">코드 복사하기</button>
+            <pre><code id="code2">def solution(n_str):
+    return n_str.lstrip('0')</code></pre>
+        </div>
+        <div class="container">
+            <button class="back-button" onclick="goBack()">뒤로 가기</button>
+            <a href="#"><button class="scroll-top-button">맨 위로 돌아가기</button></a>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+    </div>
+    </div>
+    <script src="question_script.js"></script>
+</body>
+
+</html>

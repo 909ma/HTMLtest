@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>909MA 알고리즘 문제 풀이</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>알고리즘 문제 풀이</h1>
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="https://github.com/909ma">GitHub</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
+                <a href="./main.html">Algorithm</a>
+            </nav>
+        </header>
+        <div class="filter-buttons"></div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div class="algorithm">
+            <h1>1로 만들기</h1>
+            <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181880">문제 바로가기</a></p>
+            <hr>
+            <p>문제 설명: <br>이 됩니다. 예를 들어 10이 있다면 다음과 같은 과정으로 1이 됩니다.
+                <br>
+                10 / 2 = 5<br>
+                (5 - 1) / 2 = 4<br>
+                4 / 2 = 2<br>
+                2 / 2 = 1<br>
+                위와 같이 4번의 나누기 연산으로 1이 되었습니다.<br>
+
+                정수들이 담긴 리스트 num_list가 주어질 때, num_list의 모든 원소를 1로 만들기 위해서 필요한 나누기 연산의 횟수를 return하도록 solution 함수를 완성해주세요.
+            </p>
+            <hr>
+            <p>문제 풀이:</p>
+            <p>문제에서 나온대로 무식하게 풀었습니다.</p>
+            <button class="copy-button" onclick="copyCode(1)">코드 복사하기</button>
+            <pre><code id="code1">def solution(num_list):
+    answer = 0
+    for item in num_list:
+        temp = item
+        while temp != 1:
+            if temp % 2:
+                temp = (temp - 1) // 2
+                answer += 1
+            else:
+                temp //= 2
+                answer += 1
+
+    return answer</code></pre>
+            <br><br>
+            <p>그러나 다른 사람의 풀이를 찾아보니 문제는 2진수로 나타냈을 때의 자릿수를 구하는 문제였기에 아래와 같이 풀이가 가능했습니다.<br></p>
+            <button class="copy-button" onclick="copyCode(2)">코드 복사하기</button>
+            <pre><code id="code2">def solution(num_list):
+    return sum(len(bin(i)) - 3 for i in num_list)</code></pre>
+        </div>
+        <div class="container">
+            <button class="back-button" onclick="goBack()">뒤로 가기</button>
+            <a href="#"><button class="scroll-top-button">맨 위로 돌아가기</button></a>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+    </div>
+    </div>
+    <script src="question_script.js"></script>
+</body>
+
+</html>
