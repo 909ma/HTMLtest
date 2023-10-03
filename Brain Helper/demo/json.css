@@ -1,0 +1,154 @@
+* {
+  font-family: "NanumSquareBold";
+}
+.answer,
+.question {
+  white-space: pre-line;
+}
+pre {
+  white-space: pre-wrap;
+}
+@media screen and (min-width: 1291px) {
+  body {
+    font-size: 20px;
+    font-family: "NanumSquareBold";
+  }
+
+  select {
+    width: auto;
+    height: 30px;
+    font-size: 20px;
+  }
+  .question-container {
+    margin: 20px;
+  }
+
+  .question {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .question p {
+    margin-bottom: 5px;
+  }
+
+  .navigation {
+    margin-top: 10px;
+  }
+
+  .navigation button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #000000;
+    color: white;
+  }
+  #prevButton {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 50px;
+    height: 30px;
+  }
+  #nextButton {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    width: 50px;
+    height: 30px;
+  }
+  #revealButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+    width: 100px;
+    height: 30px;
+  }
+  #gotoButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    right: 200px;
+    width: 50px;
+    height: 30px;
+  }
+  .answer.hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 1290px) {
+  body {
+    font-size: 40px;
+    font-family: "NanumSquareBold";
+    height: 2000px;
+  }
+  select {
+    width: auto;
+    height: 60px;
+    font-size: 40px;
+  }
+  .question-container {
+    margin: 20px;
+  }
+
+  .question {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .question p {
+    margin-bottom: 5px;
+  }
+
+  .navigation {
+    margin-top: 10px;
+  }
+
+  .navigation button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #000000;
+    color: white;
+    font-size: 8vw;
+    border: #000000;
+  }
+  #prevButton {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 12%;
+  }
+  #nextButton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 12%;
+  }
+  #revealButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 12%;
+    right: 0;
+    width: 50%;
+    height: 12%;
+  }
+  #gotoButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 12%;
+    left: 0;
+    width: 50%;
+    height: 12%;
+  }
+  .answer.hidden {
+    display: none;
+  }
+}

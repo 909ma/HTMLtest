@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Question 1.\nBatman patrolled the streets of Gotham City, keeping a watchful eye for any criminal activity.\n  batman",
+    "answer": "문장 해석 : 배트맨은 고담 시의 거리를 순찰하며 범죄 활동을 주의 깊게 감시했습니다.\n배트맨"
+  },
+  {
+    "question": "Question 2.\n이전 단계로 돌아갈 수 없다는 전제하에 각 단계를 확실히 매듭짓고 그 결과를 철저하게 검토하여 승인 과정을 거친 후에 다음 단계를 진행하는 개발 방법론은?\n  ① 가장 오래되고 가장 폭넓게 사용된 전통적인 소프트웨어 생명 주기 모형이다.\n  ② 고전적 생명 주기 모형이라고도 한다.\n  ③ 모형을 적용한 경험과 성공 사례가 많다.\n  ④ 각 단계가 끝난 후에는 다음 단계를 수행하기 위한 결과물이 명확하게 산출되어야 한다.",
+    "answer": "Answer 1 : 폭포수 모형\nAnswer 2 : Waterfall Model"
+  },
+  {
+    "question": "Question 3.\n사용자의 요구사항을 파악하기 위해 실제 개발될 소프트웨어에 대한 견본품(Prototype)을 만들어 최종 결과물을 예측하는 모형은?\n  ① 견본품은 사용자와 시스템 사이의 인터페이스에 중점을 두어 개발한다.",
+    "answer": "Answer 1 : 프로토타입 모형\nAnswer 2 : Prototype Model"
+  },
+  {
+    "question": "Question 4.\n나선을 따라 돌듯이 여러 번의 소프트웨어 개발 과정을 거쳐 점진적으로 완벽한 최종 소프트웨어를 개발하는 모형은?\n  ① 보헴(Boehm)이 제안하였다.\n  ② 폭포수 모형과 프로토타입 모형의 장점에 위험 분석 기능을 추가한 모형이다.\n  ③ 누락되거나 추가된 요구사항을 첨가할 수 있다.\n  ④ 유지보수 과정이 필요없다.\n  ⑤ 계획 수립 → 위험 분석 → 개발 및 검증 → 고객 평가 → 계획 수립의 사이클을 가진다.",
+    "answer": "Answer 1 : 나선형 모형\nAnswer 2 : Spiral Model\nAnswer 3 : 점진적 모형"
+  }
+]

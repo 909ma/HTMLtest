@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brain Helper</title>
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="json.css" />
+    <link
+      href="https://raw.githubusercontent.com/909ma/909ma.github.io/main/Brain%20Helper/image/favicon2.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="question-container">
+      <label for="subjectSelect">과목 : </label>
+      <select id="subjectSelect"></select>
+      <div class="question" id="question"></div>
+      <div class="navigation">
+        <button id="gotoButton">이동</button>
+        <button id="revealButton">정답 보기</button>
+        <button id="prevButton">이전</button>
+        <button id="nextButton">다음</button>
+      </div>
+    </div>
+    <script src="json.js"></script>
+  </body>
+</html>
