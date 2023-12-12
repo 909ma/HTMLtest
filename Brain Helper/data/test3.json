@@ -1,7 +1,7 @@
 [
   {
-    "question": "test3",
-    "answer": "Answer 3 : test3의 정답"
+    "question": "Electrocardiogram Generation and Feature Extraction Using a Variational Autoencoder\nElectrocardiogram",
+    "answer": "Answer 3 : 변이형 오토인코더를 사용한 심전도 생성 및 특징 추출\nElectrocardiogram: 심전도"
   },
   {
     "question": "test3 2",
